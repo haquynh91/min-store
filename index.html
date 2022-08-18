@@ -1,29 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-    <h1>Home</h1>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="shop.html">Shop</a>
-        </li>
-        <li>
-            <a href="about.html">About</a>
-        </li>
-        <li>
-            <a href="contact.html">Contact</a>
-        </li>
-    </ul>
-</body>
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- <link rel="styleps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css"
+      integrity="sha512-9nqhm3FWfB00id4NJpxK/wV1g9P2QfSsEPhSSpT+6qrESP6mpYbTfpC+Jvwe2XY27K5mLwwrqYuzqMGK5yC9/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.js"
+      integrity="sha512-o/AhZ9sd5ShcZ0nvqWdEUWTLf5HkOysN6pRiQxjwMoiruEVHO59Zz9BFcWsKV7BDatBYTPDQSCtSzWND3XpqWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="base-text">Freeshipping on oders over $25! Code: SHIPMAGIC</div>
+
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid ms-container">
+        
+        <img src="img/logo.png" alt="logo" style="object-fit: fill; max-height: 48px" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+            <input class="form-control me-1" type="search" placeholder="What are you looking for today?" aria-label="Search"
+             style="width: 60%">
+            
+          </form>
+          <i class="fa-regular fa-circle-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+   
+      </div>
+    </nav>
+  -->
+
+    <div class="header">
+      <div class="ms-container">
+        <div class="row d-flex a-center">
+          <div class="col-5">
+            <img
+              src="img/logo.png"
+              alt="logo"
+              style="object-fit: fill; max-height: 48px"
+            />
+          </div>
+          <div class="col-7 d-flex j-between">
+            <div class="search-bar relative" style="width: 100%">
+              <i
+                class="fa-solid fa-magnifying-glass absolute"
+                style="font-size: 16px; color: #adb5bd; top: 6px; left: 8px"
+              ></i>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="What are you looking for today?"
+                style="
+                  width: 100%;
+                  background-color: #f8f9fa;
+                  padding-left: 28px;
+                  border: none;
+                  border-radius: 50px;
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 22px;
+                  color: #adb5bd;
+                "
+              />
+            </div>
+            <div
+              class="d-flex j-between a-center"
+              style="width: 64px; padding-left: 20px"
+            >
+              <i class="fa-regular fa-circle-user"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu d-flex j-center">
+      <div class="menu-btn">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="menu-btn">
+        <a href="shop.html">Shop</a>
+      </div>
+      <div class="menu-btn">
+        <a href="about.html">About</a>
+      </div>
+      <div class="menu-btn">
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    
+    <section class="carousel">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner relative">
+          <div class="carousel-item active">
+            <img
+              src="img/carousel01.jpeg"
+              class="d-block w-100"
+              alt="Slide 1"
+            />
+            <div class="content-right absolute">
+              <div>
+                <div class="slide-lable">Feature-rich eco-house playset</div>
+                <div class="slide-content">
+                  This 3-level LEGO® City Family House is packed with
+                  story-inspiring details - a dream house for creative kids.
+                </div>
+              </div>
+              <button class="btn btn-primary btn-carousel">Shop now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/carousel02.jpeg"
+              class="d-block w-100"
+              alt="Slide 2"
+            />
+            <div class="content-left absolute">
+              <div>
+                <div class="slide-lable">
+                  Expandable Shopping Street playset
+                </div>
+                <div class="slide-content">
+                  This premium playset is packed with story-inspiring features
+                  kids will love, plus an expandable LEGO® City Road Plate
+                  system.
+                </div>
+              </div>
+              <button class="btn btn-primary btn-carousel">Shop now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/carousel03.jpeg"
+              class="d-block w-100"
+              alt="Slide 3"
+            />
+            <div class="content-right absolute">
+              <div>
+                <div class="slide-lable">TV-themed fire and police playset</div>
+                <div class="slide-content">
+                  Action-packed fire and police playset, overflowing with
+                  inspiration for kids and fans of the LEGO® City Adventures TV
+                  series.
+                </div>
+              </div>
+              <button class="btn btn-primary btn-carousel">Shop now</button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="shop-by-age relative">
+      <div class="relative d-flex j-center">
+        <div class="-title-line-through">Shop by Age</div>
+        <div class="line-through absolute">&nbsp;</div>
+      </div>
+
+      <div class="ms-container">
+        <div class="row d-flex j-between">
+          <div class="col-sm-4 col-md-2">
+            <div class="ages">0-2 years</div>
+          </div>
+          <div class="col-sm-4 col-md-2">
+            <div class="ages">2-4 years</div>
+          </div>
+          <div class="col-sm-4 col-md-2">
+            <div class="ages">4-8 years</div>
+          </div>
+          <div class="col-sm-4 col-md-2">
+            <div class="ages">8-12 years</div>
+          </div>
+          <div class="col-sm-4 col-md-2">
+            <div class="ages">12+ years</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-by-brand">
+      <div class="relative d-flex j-center">
+        <div class="-title-line-through">Shop by Brand</div>
+        <div class="line-through absolute">&nbsp;</div>
+      </div>
+      <div class="ms-container">
+        <div class="row d-flex" style="align-items: baseline;">
+          <div class="col-xs-6 col-sm-4 col-md-2 brand">
+            <div class="brand-logo">
+              <img src="img/logo-fisherprice.png" alt="brand-logo" />
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 brand">
+            <div class="brand-logo">
+              <img src="img/logo-barbie.png" alt="brand-logo" />
+            </div>
+          
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 brand">
+            <div class="brand-logo">
+              <img src="img/logo-lego.png" alt="brand-logo" />
+            </div>
+            
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 brand">
+            <div class="brand-logo">
+              <img src="img/logo-nerf.png" alt="brand-logo" />
+            </div>
+            
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 brand">
+            <div class="brand-logo">
+              <img src="img/logo-lol.png" alt="brand-logo" />
+            </div>
+            
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 brand">
+            <div class="brand-logo">
+              <img src="img/logo-hotwheels.svg" alt="brand-logo" />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-by-category">
+      <div class="relative d-flex j-center">
+        <div class="-title-line-through">Shop by Category</div>
+        <div class="line-through absolute">&nbsp;</div>
+      </div>
+      <div class="ms-container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+            <div class="category-img">
+              <img src="img/dolls.png" alt="category-img" />
+            </div>
+            <div class="category-name absolute">Dolls & Dollhouses</div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+            <div class="category-img">
+              <img src="img/games.png" alt="category-img" />
+            </div>
+            <div class="category-name absolute">Games & Pluzzles</div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+            <div class="category-img">
+              <img src="img/building set toys.png" alt="category-img" />
+            </div>
+            <div class="category-name absolute">Building Set Toys</div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+            <div class="category-img">
+              <img src="img/outdoor sport toys.png" alt="category-img" />
+            </div>
+            <div class="category-name absolute">Outdoor & Sport Toys</div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+            <div class="category-img">
+              <img src="img/action figures.png" alt="category-img" />
+            </div>
+            <div class="category-name absolute">Action figures</div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+            <div class="category-img">
+              <img src="img/vehicles.png" alt="category-img" />
+            </div>
+            <div class="category-name absolute">Vehicles</div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+            <div class="category-img">
+              <img src="img/games.png" alt="category-img" />
+            </div>
+            <div class="category-name absolute">Arts & Crafts</div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+            <div class="category-img">
+              <img src="img/dolls.png" alt="category-img" />
+            </div>
+            <div class="category-name absolute">Instruments</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-this-week">
+      <div class="ms-container" style="padding-top: 24px; padding-bottom: 24px; margin-bottom:0;">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="video-title">Video This Week</div>
+            <div class="video-content">
+              The Magformers Landmark Set is a colorful magnetic construction
+              set with 174 pieces for building eight 3-D structures of famous
+              landmarks, some as tall as two feet. The pieces come in a variety
+              of different shapes, and each one can attach together on any side
+              using built-in magnets. The instruction booklet shows how to build
+              the Leaning Tower of Pisa, the Space Needle, the Eiffel Tower, the
+              Empire State Building, the Sydney Opera House, the Great Pyramid,
+              the Golden Gate Bridge, and Tower Bridge. You probably won't have
+              enough pieces to build all eight structures at once, so you'll
+              most likely have to build one at a time. Of course, kids can also
+              use the pieces to build whatever they want.
+            </div>
+            <button type="button" class="btn btn-primary btn-shop-now" style="margin-top:12px">
+              Shop now
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-6 relative">
+            <div class="video absolute">
+              <iframe
+                
+                src="https://www.youtube.com/embed/abrcVpjbpwg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                object-fit: cover;
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommended">
+      <div class="recommended-title">Recommended for you</div>
+      <div class="ms-container">
+        <div class="recommended-products relative">
+          <div
+            id="recommended-products"
+            class="carousel slide relative"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators absolute">
+              <button
+                type="button"
+                data-bs-target="#recommended-products"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#recommended-products"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#recommended-products"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active d-flex j-between">
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/Friendship Tree House.webp"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="sale-off absolute">20%</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/Friendship Tree House.webp"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/Friendship Tree House.webp"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/Friendship Tree House.webp"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item d-flex j-between">
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/pro bike for kid.jpeg"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="sale-off absolute">20%</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/pro bike for kid.jpeg"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/pro bike for kid.jpeg"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/pro bike for kid.jpeg"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item d-flex j-between">
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/parking toy station car.webp"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="sale-off absolute">20%</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/parking toy station car.webp"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/parking toy station car.webp"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 10rem">
+                  <img
+                    src="img/parking toy station car.webp"
+                    class="card-img-top"
+                    alt="product-img"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Friendship Tree House</h5>
+                    <div class="product-price">$133.99</div>
+                    <div class="product-price price-sale">$113.99</div>
+                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#recommended-products"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+              <i class="fa-solid fa-chevron-left absolute"></i>
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#recommended-products"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true">
+              <i class="fa-solid fa-chevron-right absolute"></i>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="ms-container" style="padding-top: 24px; padding-bottom: 24px">
+        <div class="row">
+          <div class="col-4">
+            <div class="relative d-flex j-center" style="padding-bottom: 16px">
+              <div class="footer-line-through">&nbsp;</div>
+              <div class="footer-title absolute">Question?</div>
+            </div>
+            <div class="contact-details">
+              <div>
+                <span class="contact-info">Phone:</span> <span>0123456789</span>
+              </div>
+            </div>
+            <div class="contact-details">
+              <div>
+                <span class="contact-info">Email:</span>
+                <span>contact@minstore.com</span>
+              </div>
+            </div>
+            <div class="contact-details">
+              <div>
+                <span class="contact-info">Address:</span>
+                <span>10706 Westchase, Tampa, FLorida, USA</span>
+              </div>
+            </div>
+            <div class="contact-details">
+              <div>
+                <div class="contact-info">Regular Store Hours:</div>
+                <span> Monday - Saturday: 09 a.m - 10 p.m</span> <br />
+                <span> Sunday: 10 a.m - 09 p.m</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="relative d-flex j-center" style="padding-bottom: 16px">
+              <div class="footer-line-through">&nbsp;</div>
+              <div class="footer-title absolute">Visit Our Store</div>
+            </div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.302658764922!2d-82.59862514915626!3d28.045781982567814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ea50ea08dc99%3A0xbf3d5f7cebc2080d!2s10706%20Westchase%20Dr%2C%20Westchase%2C%20FL%2033626!5e0!3m2!1svi!2sus!4v1660721197244!5m2!1svi!2sus"
+                width="100%"
+                height="160"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="relative d-flex j-center" style="padding-bottom: 16px">
+              <div class="footer-line-through">&nbsp;</div>
+              <div class="footer-title absolute">Follow Us</div>
+            </div>
+            <div class="d-flex j-center">
+              <div class="social-logo">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="social-logo">
+                <i class="fa-brands fa-square-instagram"></i>
+              </div>
+              <div class="social-logo">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
