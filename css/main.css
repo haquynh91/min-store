@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+section {
+  margin-bottom: 24px;
+}
+.ms-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 148px;
+  padding-right: 148px;
+}
+img {
+  max-width: 100%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+[class*="col-"] {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.col-1 {
+  width: 8.333333%;
+}
+.col-2 {
+  width: 16.666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.333333%;
+}
+.col-5 {
+  width: 41.666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.333333%;
+}
+.col-8 {
+  width: 66.666667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.333333%;
+}
+.col-11 {
+  width: 91.666667%;
+}
+.col-12 {
+  width: 100%;
+}
+.col-sm-6 {
+}
+.col-md-4 {
+}
+
+/* Classes Utilities*/
+.d-flex {
+  display: flex;
+}
+.j-center {
+  justify-content: center;
+}
+.j-end {
+  justify-content: end;
+}
+.j-between {
+  justify-content: space-between;
+}
+.a-center {
+  align-items: center;
+}
+.as-end {
+  align-self: end;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+
+.base-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffccd5;
+  background-color: #ff4d6d;
+}
+.header {
+  padding: 8px 0;
+  border-bottom: solid 1px #dee2e6;
+}
+
+.menu-btn {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495057;
+  padding: 12px 12px;
+}
+.btn {
+  padding: 4px 24px;
+  border-radius: 8px;
+}
+.btn-primary {
+  background-color: #ff758f;
+  color: #f8f9fa;
+  border: none;
+}
+.btn-outline-primary {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff758f;
+  border: solid 1px #ff758f;
+  background-color: none;
+  width: 100%;
+}
+[class*="-title"] {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #212529;
+  text-align: center;
+  padding-bottom: 12px;
+}
+.product-price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #343a40;
+  text-decoration-line: line-through;
+}
+.price-sale {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #c9184a;
+  text-decoration-line: none;
+}
+.sale-off {
+  padding: 4px 12px;
+  right: 8px;
+  top: 8px;
+  color: #ffffff;
+  background: #c9184a;
+  border-radius: 8px;
+}
+.card-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #343a40;
+}
+
+/* Section Recommended for you */
+.carousel-control-prev-icon {
+  background-image: none;
+}
+.carousel-control-next-icon {
+  background-image: none;
+}
+.fa-chevron-left {
+  color: #ced4da;
+  font-size: 28px;
+  font-weight: bold;
+  top: 50%;
+  left: -24px;
+  z-index: 1;
+}
+.fa-chevron-right {
+  color: #ced4da;
+  font-size: 28px;
+  top: 50%;
+  right: -24px;
+  z-index: 1;
+}
+.card-title {
+  text-align: left;
+}
+
+.fa-brands {
+  font-size: 100px;
+}
+.footer-line {
+  border-bottom: solid 1px #ced4da;
+}
+
+.footer {
+  background-color: #e9ecef;
+}
+.footer-title {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #e9ecef;
+  padding: 0 8px;
+
+  z-index: 1;
+}
+.footer-line-through {
+  height: 12px;
+  width: 100%;
+  border-bottom: solid 1px #ced4da;
+}
+.contact-details {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #6c757d;
+
+  padding-bottom: 6px;
+}
+.contact-info {
+  font-weight: 700;
+  color: #495057;
+}
+.social-logo {
+  padding: 0 8px;
+  font-size: 28px;
+}
