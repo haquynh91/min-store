@@ -3,18 +3,39 @@
   margin: 0;
   padding: 0;
 }
-section {
-  margin-bottom: 24px;
+html {
+  font-size: 16px;
 }
+@media (min-width:768px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width:1024px) {
+  html {
+    font-size: 19px;
+  }
+}
+@media (min-width:1280px) {
+  html {
+    font-size: 20px;
+  }
+}
+section {
+  margin-bottom: 28px;
+}
+
 .ms-container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 148px;
-  padding-right: 148px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
+
 img {
   max-width: 100%;
 }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -29,7 +50,7 @@ img {
   padding-left: 10px;
   padding-right: 10px;
 }
-.col-1 {
+/* .col-1 {
   width: 8.333333%;
 }
 .col-2 {
@@ -64,11 +85,7 @@ img {
 }
 .col-12 {
   width: 100%;
-}
-.col-sm-6 {
-}
-.col-md-4 {
-}
+} */
 
 /* Classes Utilities*/
 .d-flex {
@@ -151,7 +168,7 @@ img {
   line-height: 28px;
   color: #212529;
   text-align: center;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
 }
 .product-price {
   font-style: normal;
@@ -252,6 +269,6 @@ img {
   color: #495057;
 }
 .social-logo {
-  padding: 0 8px;
+  margin: 0 8px;
   font-size: 28px;
 }
