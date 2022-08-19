@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MinStore-home</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -13,12 +14,8 @@
     />
 
     <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- <link rel="styleps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link
@@ -64,14 +61,14 @@
     <div class="header">
       <div class="ms-container">
         <div class="row d-flex a-center">
-          <div class="col-md-6 col-lg-1">
+          <div class="col-xs-12 col-md-6 col-lg-3">
             <img
               src="img/logo.png"
               alt="logo"
               style="object-fit: fill; max-height: 48px"
             />
           </div>
-          <div class="col-md-6 col-lg-1 d-flex j-between">
+          <div class="col-md-6 col-lg-9 d-flex j-between">
             <div class="search-bar relative" style="width: 100%">
               <i
                 class="fa-solid fa-magnifying-glass absolute"
@@ -122,7 +119,7 @@
         <a href="contact.html">Contact</a>
       </div>
     </div>
-    
+
     <section class="carousel">
       <div
         id="carouselExampleIndicators"
@@ -237,72 +234,53 @@
 
       <div class="ms-container">
         <div class="row d-flex j-between">
-          <div class="col-sm-4 col-md-2">
+          <div class="col-4 col-sm-4 col-md-2">
             <div class="ages">0-2 years</div>
           </div>
-          <div class="col-sm-4 col-md-2">
+          <div class="col-4 col-sm-4 col-md-2">
             <div class="ages">2-4 years</div>
           </div>
-          <div class="col-sm-4 col-md-2">
+          <div class="col-4 col-sm-4 col-md-2">
             <div class="ages">4-8 years</div>
           </div>
-          <div class="col-sm-4 col-md-2">
+          <div class="col-4 col-sm-4 col-md-2">
             <div class="ages">8-12 years</div>
           </div>
-          <div class="col-sm-4 col-md-2">
+          <div class="col-4 col-sm-4 col-md-2">
             <div class="ages">12+ years</div>
           </div>
-
         </div>
       </div>
     </section>
-    
+
     <section class="shop-by-brand">
       <div class="relative d-flex j-center">
         <div class="-title-line-through">Shop by Brand</div>
         <div class="line-through absolute">&nbsp;</div>
       </div>
       <div class="ms-container">
-        <div class="row d-flex" style="align-items: baseline;">
-          <div class="col-xs-6 col-sm-4 col-md-2 brand">
-            <div class="brand-logo">
-              <a href=""><img src="img/logo-fisherprice.png" alt="brand-logo" /></a>
-            </div>
+        <div class="row d-flex" style="align-items: baseline">
+          <div class="col-4 col-sm-4 col-md-2 brand-logo">
+            <a href=""><img src="img/logo-nerf.png" alt="brand-logo" /></a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-2 brand">
-            <div class="brand-logo">
-              <a href=""><img src="img/logo-barbie.png" alt="brand-logo" /></a>
-              
-            </div>
-          
+          <div class="col-4 col-sm-4 col-md-2 brand-logo">
+            <a href=""><img src="img/logo-barbie.png" alt="brand-logo" /></a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-2 brand">
-            <div class="brand-logo">
-              <a href=""><img src="img/logo-lego.png" alt="brand-logo" /></a>
-              
-            </div>
-            
+
+          <div class="col-4 col-sm-4 col-md-2 brand-logo">
+            <a href=""><img src="img/logo-lego.png" alt="brand-logo" /></a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-2 brand">
-            <div class="brand-logo">
-              <a href=""><img src="img/logo-nerf.png" alt="brand-logo" /></a>
-              
-            </div>
-            
+
+          <div class="col-4 col-sm-4 col-md-2 brand-logo">
+            <a href=""><img src="img/logo-lol.png" alt="brand-logo" /></a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-2 brand">
-            <div class="brand-logo">
-              <a href=""><img src="img/logo-lol.png" alt="brand-logo" /></a>
-              
-            </div>
-            
+          <div class="col-4 col-sm-4 col-md-2 brand-logo">
+            <a href=""
+              ><img src="img/logo-fisherprice.png" alt="brand-logo"
+            /></a>
           </div>
-          <div class="col-xs-6 col-sm-4 col-md-2 brand">
-            <div class="brand-logo">
-              <a href=""><img src="img/logo-hotwheels.svg" alt="brand-logo" /></a>
-              
-            </div>
-            
+          <div class="col-4 col-sm-4 col-md-2 brand-logo">
+            <a href=""><img src="img/logo-hotwheels.svg" alt="brand-logo" /></a>
           </div>
         </div>
       </div>
@@ -315,51 +293,57 @@
       </div>
       <div class="ms-container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 category relative">
             <div class="category-img">
-              <a href=""><img src="img/dolls.png" alt="category-img"/></a>
+              <a href=""><img src="img/dolls.png" alt="category-img" /></a>
             </div>
             <div class="category-name absolute">Dolls & Dollhouses</div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 category relative">
             <div class="category-img">
-              <a href=""><img src="img/games.png" alt="category-img"/></a>
+              <a href=""><img src="img/games.png" alt="category-img" /></a>
             </div>
             <div class="category-name absolute">Games & Pluzzles</div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 category relative">
             <div class="category-img">
-              <a href=""><img src="img/building set toys.png" alt="category-img"/></a>
+              <a href=""
+                ><img src="img/building set toys.png" alt="category-img"
+              /></a>
             </div>
             <div class="category-name absolute">Building Set Toys</div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 category relative">
             <div class="category-img">
-              <a href=""><img src="img/outdoor sport toys.png" alt="category-img"/></a>
+              <a href=""
+                ><img src="img/outdoor sport toys.png" alt="category-img"
+              /></a>
             </div>
             <div class="category-name absolute">Outdoor & Sport Toys</div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 category relative">
             <div class="category-img">
-              <a href=""><img src="img/action figures.png" alt="category-img"/></a>
+              <a href=""
+                ><img src="img/action figures.png" alt="category-img"
+              /></a>
             </div>
             <div class="category-name absolute">Action figures</div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 category relative">
             <div class="category-img">
-              <a href=""><img src="img/vehicles.png" alt="category-img"/></a>
+              <a href=""><img src="img/vehicles.png" alt="category-img" /></a>
             </div>
             <div class="category-name absolute">Vehicles</div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 category relative">
             <div class="category-img">
-              <a href=""><img src="img/games.png" alt="category-img"/></a>
+              <a href=""><img src="img/games.png" alt="category-img" /></a>
             </div>
             <div class="category-name absolute">Arts & Crafts</div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 category relative">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 category relative">
             <div class="category-img">
-              <a href=""><img src="img/dolls.png" alt="category-img"/></a>
+              <a href=""><img src="img/dolls.png" alt="category-img" /></a>
             </div>
             <div class="category-name absolute">Instruments</div>
           </div>
@@ -368,7 +352,10 @@
     </section>
 
     <section class="video-this-week">
-      <div class="ms-container" style="padding-top: 24px; padding-bottom: 24px; margin-bottom:0;">
+      <div
+        class="ms-container"
+        style="padding-top: 24px; padding-bottom: 24px; margin-bottom: 0"
+      >
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <div class="video-title">Video This Week</div>
@@ -385,20 +372,25 @@
               most likely have to build one at a time. Of course, kids can also
               use the pieces to build whatever they want.
             </div>
-            <button type="button" class="btn btn-primary btn-shop-now" style="margin-top:12px">
+            <button
+              type="button"
+              class="btn btn-primary btn-shop-now"
+              style="margin-top: 12px"
+            >
               Shop now
             </button>
           </div>
-          <div class="col-sm-12 col-md-6 relative">
-            <div class="video absolute">
+
+          <div class="col-sm-12 col-md-6">
+            <div class="ratio ratio-16x9">
               <iframe
-                
+                width="560"
+                height="315"
                 src="https://www.youtube.com/embed/abrcVpjbpwg"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-                object-fit: cover;
               ></iframe>
             </div>
           </div>
@@ -632,10 +624,10 @@
       </div>
     </section>
 
-    <section class="footer" style="margin-bottom: 0;">
+    <section class="footer" style="margin-bottom: 0">
       <div class="ms-container" style="padding-top: 24px; padding-bottom: 24px">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="col-xs-12 col-md-6 col-lg-4">
             <div class="relative d-flex j-center" style="padding-bottom: 16px">
               <div class="footer-line-through">&nbsp;</div>
               <div class="footer-title absolute">Question?</div>
@@ -665,37 +657,47 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="relative d-flex j-center" style="padding-bottom: 16px">
-              <div class="footer-line-through">&nbsp;</div>
-              <div class="footer-title absolute">Visit Our Store</div>
-            </div>
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.302658764922!2d-82.59862514915626!3d28.045781982567814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ea50ea08dc99%3A0xbf3d5f7cebc2080d!2s10706%20Westchase%20Dr%2C%20Westchase%2C%20FL%2033626!5e0!3m2!1svi!2sus!4v1660721197244!5m2!1svi!2sus"
-                width="100%"
-                height="160"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="relative d-flex j-center" style="padding-bottom: 16px">
-              <div class="footer-line-through">&nbsp;</div>
-              <div class="footer-title absolute">Follow Us</div>
-            </div>
-            <div class="d-flex j-center">
-              <div class="social-logo">
-                <i class="fa-brands fa-facebook"></i>
+          <div class="col-xs-12 col-md-6 col-lg-8">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div
+                  class="relative d-flex j-center"
+                  style="padding-bottom: 16px"
+                >
+                  <div class="footer-line-through">&nbsp;</div>
+                  <div class="footer-title absolute">Visit Our Store</div>
+                </div>
+                <div class="map ratio ratio-21x9">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.302658764922!2d-82.59862514915626!3d28.045781982567814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2ea50ea08dc99%3A0xbf3d5f7cebc2080d!2s10706%20Westchase%20Dr%2C%20Westchase%2C%20FL%2033626!5e0!3m2!1svi!2sus!4v1660721197244!5m2!1svi!2sus"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
-              <div class="social-logo">
-                <i class="fa-brands fa-square-instagram"></i>
-              </div>
-              <div class="social-logo">
-                <i class="fa-brands fa-twitter"></i>
+              <div class="col-md-12 col-lg-6">
+                <div
+                  class="relative d-flex j-center"
+                  style="padding-bottom: 16px"
+                >
+                  <div class="footer-line-through">&nbsp;</div>
+                  <div class="footer-title absolute">Follow Us</div>
+                </div>
+                <div class="d-flex j-center">
+                  <div class="social-logo">
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div class="social-logo">
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </div>
+                  <div class="social-logo">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
