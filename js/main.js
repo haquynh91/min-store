@@ -1,3 +1,5 @@
+
+// Product-slider
 $(document).ready(function () {
   $(".product-slider").slick({
     slidesToShow: 4,

@@ -55,5 +55,13 @@ font-size: 14px;
 line-height: 22px;
 color: #495057;
 padding: 0.5rem 0.5rem;
+}.btn-show {
+    align-items: center;
+    width: 120px;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+color: #495057;
+border: solid 1px #495057;
 }
 
