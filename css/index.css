@@ -13,17 +13,17 @@
 }
 [class*="content-"] {
   color: #343a40;
-  top: 20%;
+  top: 30%;
   z-index: 1;
 }
 .content-right {
   text-align: right;
-  right: 148px;
+  right: 10%;
   padding-left: 60%;
 }
 .content-left {
   text-align: left;
-  left: 148px;
+  left: 10%;
   padding-right: 60%;
 }
 .description-right {
@@ -44,7 +44,6 @@
   z-index: -1;
 }
 [class*="-name"] {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -61,11 +60,16 @@
   border-radius: 8px;
   padding: 4px 8px;
 }
+.ages:hover {
+  background-color: #FFB3C1;
+}
 .brand-logo {
   padding: 0 16px;
+  align-items: baseline;
 }
-.category {
-  border-radius: 8px;
+.brand-logo:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 .category-name {
   color: #a4133c;
@@ -78,6 +82,9 @@ padding-bottom: 10px;
 }
 .category-img img{
   border-radius: 8px;
+}
+.category:hover {
+  transform: scale(1.05);
 }
 /* Section Video this week */
 .video-this-week {

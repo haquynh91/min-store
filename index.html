@@ -14,8 +14,17 @@
     />
 
     <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- <link rel="styleps://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link
@@ -31,94 +40,65 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- Link CSS slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <div class="base-text">Freeshipping on oders over $25! Code: SHIPMAGIC</div>
-
-    <!--
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid ms-container">
-        
-        <img src="img/logo.png" alt="logo" style="object-fit: fill; max-height: 48px" />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          
-            <input class="form-control me-1" type="search" placeholder="What are you looking for today?" aria-label="Search"
-             style="width: 60%">
-        </div>    
-        <div>  
-          <i class="fa-regular fa-circle-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-      </div>
-    </nav>
-  -->
-
-    <div class="header">
-      <div class="ms-container">
-        <div class="row d-flex a-center">
-          <div class="col-xs-12 col-md-6 col-lg-3">
-            <img
-              src="img/logo.png"
-              alt="logo"
-              style="object-fit: fill; max-height: 48px"
-            />
-          </div>
-          <div class="col-md-6 col-lg-9 d-flex j-between">
-            <div class="search-bar relative" style="width: 100%">
-              <i
-                class="fa-solid fa-magnifying-glass absolute"
-                style="font-size: 16px; color: #adb5bd; top: 6px; left: 8px"
-              ></i>
-              <input
-                type="search"
-                name="search"
-                id="search"
-                placeholder="What are you looking for today?"
-                style="
-                  width: 100%;
-                  background-color: #f8f9fa;
-                  padding-left: 28px;
-                  border: none;
-                  border-radius: 50px;
-                  font-family: 'Inter';
-                  font-style: normal;
-                  font-weight: 400;
-                  font-size: 14px;
-                  line-height: 22px;
-                  color: #adb5bd;
-                "
+    <!-- HEADER -->
+    <section class="header" style="margin-bottom: 0;">
+      <div class="base-text">Freeshipping on oders over $25! Code: SHIPMAGIC</div>
+      <div class="header-logo">
+        <div class="ms-container">
+          <div class="row d-flex a-center">
+            <div class="col-12 col-md-6">
+              <img
+                src="img/logo.png"
+                alt="logo"
+                style="object-fit: fill; max-height: 48px"
               />
             </div>
-            <div
-              class="d-flex j-between a-center"
-              style="width: 64px; padding-left: 20px"
-            >
-              <i class="fa-regular fa-circle-user"></i>
-              <i class="fa-solid fa-cart-shopping"></i>
+            <div class="col-12 col-md-6 d-flex j-between">
+              <div class="search-bar relative" style="width: 100%">
+                <i
+                  class="fa-solid fa-magnifying-glass absolute"
+                  style="font-size: 16px; color: #adb5bd; top: 6px; left: 8px"
+                ></i>
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="What are you looking for?"
+                />
+              </div>
+              <div
+                class="d-flex j-between a-center icon"
+                style="width: 60px; padding-left: 16px"
+              >
+                <a class="icon-user" href="#"
+                  ><i class="fa-regular fa-circle-user"></i
+                ></a>
+                <a class="icon-cart" href="#"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="menu d-flex j-center">
-      <div class="menu-btn">
-        <a href="index.html">Home</a>
+      <div class="menu d-flex j-center">
+        <div><a class="menu-btn" href="index.html">Home</a></div>
+        <div><a class="menu-btn" href="shop.html">Shop</a></div>
+        <div><a class="menu-btn" href="about.html">About</a></div>
+        <div><a class="menu-btn" href="contact.html">Contact</a></div>
       </div>
-      <div class="menu-btn">
-        <a href="shop.html">Shop</a>
-      </div>
-      <div class="menu-btn">
-        <a href="about.html">About</a>
-      </div>
-      <div class="menu-btn">
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
+    </section>
+    
 
     <section class="carousel">
       <div
@@ -226,6 +206,7 @@
       </div>
     </section>
 
+    <!-- SHOP BY AGE -->
     <section class="shop-by-age relative">
       <div class="relative d-flex j-center">
         <div class="-title-line-through">Shop by Age</div>
@@ -235,24 +216,25 @@
       <div class="ms-container">
         <div class="row d-flex j-between">
           <div class="col-4 col-sm-4 col-md-2">
-            <div class="ages">0-2 years</div>
+            <div class="ages"><a href="#"></a>0-2 years</div>
           </div>
           <div class="col-4 col-sm-4 col-md-2">
-            <div class="ages">2-4 years</div>
+            <div class="ages"><a href="#"></a>2-4 years</div>
           </div>
           <div class="col-4 col-sm-4 col-md-2">
-            <div class="ages">4-8 years</div>
+            <div class="ages"><a href="#"></a>4-8 years</div>
           </div>
           <div class="col-4 col-sm-4 col-md-2">
-            <div class="ages">8-12 years</div>
+            <div class="ages"><a href="#"></a>8-12 years</div>
           </div>
           <div class="col-4 col-sm-4 col-md-2">
-            <div class="ages">12+ years</div>
+            <div class="ages"><a href="#"></a>12+ years</div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- SHOP BY BRAND -->
     <section class="shop-by-brand">
       <div class="relative d-flex j-center">
         <div class="-title-line-through">Shop by Brand</div>
@@ -286,6 +268,7 @@
       </div>
     </section>
 
+    <!-- SHOP BY CATEGORY -->
     <section class="shop-by-category">
       <div class="relative d-flex j-center">
         <div class="-title-line-through">Shop by Category</div>
@@ -351,6 +334,7 @@
       </div>
     </section>
 
+    <!-- VIDEO THIS WEEK -->
     <section class="video-this-week">
       <div
         class="ms-container"
@@ -374,13 +358,12 @@
             </div>
             <button
               type="button"
-              class="btn btn-primary btn-shop-now"
+              class="btn btn-shop-now btn-primary"
               style="margin-top: 12px"
             >
               Shop now
             </button>
           </div>
-
           <div class="col-sm-12 col-md-6">
             <div class="ratio ratio-16x9">
               <iframe
@@ -397,237 +380,80 @@
         </div>
       </div>
     </section>
-
+    <!-- RECOMMENDED PRODUCTS -->
     <section class="recommended">
       <div class="recommended-title">Recommended for you</div>
       <div class="ms-container">
-        <div class="recommended-products relative">
-          <div
-            id="recommended-products"
-            class="carousel slide relative"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators absolute">
-              <button
-                type="button"
-                data-bs-target="#recommended-products"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#recommended-products"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#recommended-products"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
+        <div class="product-slider">
+          <div class="product-item relative">
+            <div class="product-img">
+              <a href=""><img src="img/pro bike for kid.jpeg" alt="" /></a>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active d-flex j-between">
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/Friendship Tree House.webp"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="sale-off absolute">20%</div>
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/Friendship Tree House.webp"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/Friendship Tree House.webp"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/Friendship Tree House.webp"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item d-flex j-between">
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/pro bike for kid.jpeg"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="sale-off absolute">20%</div>
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/pro bike for kid.jpeg"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/pro bike for kid.jpeg"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/pro bike for kid.jpeg"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item d-flex j-between">
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/parking toy station car.webp"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="sale-off absolute">20%</div>
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/parking toy station car.webp"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/parking toy station car.webp"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-                <div class="card" style="width: 10rem">
-                  <img
-                    src="img/parking toy station car.webp"
-                    class="card-img-top"
-                    alt="product-img"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Friendship Tree House</h5>
-                    <div class="product-price">$133.99</div>
-                    <div class="product-price price-sale">$113.99</div>
-                    <a href="#" class="btn btn-outline-primary">Add to Cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="sale-off absolute">20%</div>
+            <div class="product-name">Pro Bike For Kids</div>
+            <span class="original-price">$133.99</span>
+            <span class="discount-price">$113.99</span>
+            <a href="#" class="btn btn-outline-primary btn-in-card"
+              >Add to Cart</a
+            >
           </div>
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#recommended-products"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true">
-              <i class="fa-solid fa-chevron-left absolute"></i>
-            </span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#recommended-products"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true">
-              <i class="fa-solid fa-chevron-right absolute"></i>
-            </span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="product-item relative">
+            <div class="product-img">
+              <a href=""><img src="img/pro bike for kid.jpeg" alt="" /></a>
+            </div>
+            <div class="sale-off absolute">20%</div>
+            <div class="product-name">Pro Bike For Kids</div>
+            <span class="original-price">$133.99</span>
+            <span class="discount-price">$113.99</span>
+            <a href="#" class="btn btn-outline-primary btn-in-card"
+              >Add to Cart</a
+            >
+          </div>
+          <div class="product-item relative">
+            <div class="product-img">
+              <a href=""><img src="img/pro bike for kid.jpeg" alt="" /></a>
+            </div>
+            <div class="sale-off absolute">20%</div>
+            <div class="product-name">Pro Bike For Kids</div>
+            <span class="original-price">$133.99</span>
+            <span class="discount-price">$113.99</span>
+            <a href="#" class="btn btn-outline-primary btn-in-card"
+              >Add to Cart</a
+            >
+          </div>
+          <div class="product-item relative">
+            <div class="product-img">
+              <a href=""><img src="img/pro bike for kid.jpeg" alt="" /></a>
+            </div>
+            <div class="sale-off absolute">20%</div>
+            <div class="product-name">Pro Bike For Kids</div>
+            <span class="original-price">$133.99</span>
+            <span class="discount-price">$113.99</span>
+            <a href="#" class="btn btn-outline-primary btn-in-card"
+              >Add to Cart</a
+            >
+          </div>
+          <div class="product-item relative">
+            <div class="product-img">
+              <a href=""><img src="img/pro bike for kid.jpeg" alt="" /></a>
+            </div>
+            <div class="sale-off absolute">20%</div>
+            <div class="product-name">Pro Bike For Kids</div>
+            <span class="original-price">$133.99</span>
+            <span class="discount-price">$113.99</span>
+            <a href="#" class="btn btn-outline-primary btn-in-card"
+              >Add to Cart</a
+            >
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="footer" style="margin-bottom: 0">
+    <!-- FOOTER -->
+    <section class="footer" style="margin-bottom: 0; margin-top: 50px;">
       <div class="ms-container" style="padding-top: 24px; padding-bottom: 24px">
         <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="relative d-flex j-center" style="padding-bottom: 16px">
               <div class="footer-line-through">&nbsp;</div>
               <div class="footer-title absolute">Question?</div>
@@ -657,7 +483,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6 col-lg-8">
+          <div class="col-12 col-md-6 col-lg-8">
             <div class="row">
               <div class="col-md-12 col-lg-6">
                 <div
@@ -717,5 +543,19 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
+    <!-- Slick Libraries -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,59 @@
+.breadcrumb-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #a4133c;
+}
+.breadcrumb-item .acitve {
+  color: #495057;
+}
+.filter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #212529;
+}
+.reset {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #a4133c;
+  text-decoration: underline;
+}
+.filter-result {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #343a40;
+}
+.sort-options {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #343a40;
+}
+.sort-by {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #adb5bd;
+  background-color: white;
+  top: -8px;
+  left: 16px;
+}
+.accordion-button {
+    font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #495057;
+padding: 0.5rem 0.5rem;
+}
+
+.accordion-body {
+    font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #495057;
+padding: 0.5rem 0.5rem;
+}
+

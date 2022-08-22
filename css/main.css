@@ -6,21 +6,31 @@
 html {
   font-size: 16px;
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   html {
     font-size: 18px;
   }
 }
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   html {
     font-size: 19px;
   }
 }
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
   html {
     font-size: 20px;
   }
 }
+a {
+  text-decoration: none;
+}
+a:visited{
+  color: inherit;
+}
+
+ul {
+    list-style: none;
+  }
 section {
   margin-bottom: 28px;
 }
@@ -31,6 +41,7 @@ section {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 
 img {
   max-width: 100%;
@@ -50,42 +61,6 @@ img {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* .col-1 {
-  width: 8.333333%;
-}
-.col-2 {
-  width: 16.666667%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-4 {
-  width: 33.333333%;
-}
-.col-5 {
-  width: 41.666667%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-7 {
-  width: 58.333333%;
-}
-.col-8 {
-  width: 66.666667%;
-}
-.col-9 {
-  width: 75%;
-}
-.col-10 {
-  width: 83.333333%;
-}
-.col-11 {
-  width: 91.666667%;
-}
-.col-12 {
-  width: 100%;
-} */
 
 /* Classes Utilities*/
 .d-flex {
@@ -117,7 +92,6 @@ img {
 }
 
 .base-text {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -126,32 +100,64 @@ img {
   color: #ffccd5;
   background-color: #ff4d6d;
 }
-.header {
+.header-logo {
   padding: 8px 0;
   border-bottom: solid 1px #dee2e6;
 }
-
+#search {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  padding-left: 28px;
+  padding-right: 8px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #adb5bd;
+}
+.icon:hover {
+  color:#212529;
+}
+.menu {
+  padding: 12px 0
+}
 .menu-btn {
-  font-family: "Noto Serif";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   color: #495057;
   padding: 12px 12px;
+  text-decoration: none;
+}
+.menu-btn:hover {
+  color:#ff4d6d;
 }
 .btn {
   padding: 4px 24px;
   border-radius: 8px;
 }
 .btn-primary {
-  background-color: #ff758f;
+  background-color: #ff758f; 
   color: #f8f9fa;
   border: none;
 }
+/* .btn:hover+:active+:focus+:visited+:focus-visible, */
+.btn:focus,
+.btn:active,
+.btn:visited,
+.btn:focus-visible,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:visited,
+.btn-primary:focus-visible {
+  background-color: #FF4D6D;
+  border:0px;
+  box-shadow: none;
+}
 .btn-outline-primary {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -161,7 +167,6 @@ img {
   width: 100%;
 }
 [class*="-title"] {
-  font-family: "Noto Serif";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -170,15 +175,27 @@ img {
   text-align: center;
   padding-bottom: 20px;
 }
-.product-price {
-  font-style: normal;
+.product-item {
+  border-radius: 8px;
+  padding: 16px 12px;
+  -moz-box-shadow: 3px 3px 5px 0px #dee2e6;
+  -webkit-box-shadow: 3px 3px 5px 0px #dee2e6;
+  box-shadow: 3px 3px 5px 0px #dee2e6;
+}
+.product-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #343a40;
+}
+.original-price {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
   color: #343a40;
   text-decoration-line: line-through;
 }
-.price-sale {
+.discount-price {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -187,23 +204,15 @@ img {
 }
 .sale-off {
   padding: 4px 12px;
-  right: 8px;
-  top: 8px;
+  right: 12px;
+  top: 16px;
   color: #ffffff;
   background: #c9184a;
   border-radius: 8px;
 }
-.card-title {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  color: #343a40;
-}
 
 /* Section Recommended for you */
-.carousel-control-prev-icon {
+/* .carousel-control-prev-icon {
   background-image: none;
 }
 .carousel-control-next-icon {
@@ -226,8 +235,95 @@ img {
 }
 .card-title {
   text-align: left;
+} */
+
+.product-card {
+  border-radius: 8px;
+  padding: 16px 12px;
+  -moz-box-shadow: 3px 3px 5px 0px #dee2e6;
+  -webkit-box-shadow: 3px 3px 5px 0px #dee2e6;
+  box-shadow: 3px 3px 5px 0px #dee2e6;
+}
+.product-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #343a40;
+}
+.original-price {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #343a40;
+  text-decoration-line: line-through;
+}
+.discount-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #c9184a;
+  text-decoration-line: none;
+}
+.sale-off {
+  padding: 4px 12px;
+  right: 12px;
+  top: 16px;
+  color: #ffffff;
+  background: #c9184a;
+  border-radius: 8px;
 }
 
+/* slick slider*/
+.slick-initialized .slick-slide {
+  margin: 0 10px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  z-index: 1;
+  transition: all 0.2s linear;
+}
+.slick-arrow-btn:hover {
+  color: #ff758f;
+}
+.slick-prev {
+  left: -30px;
+}
+.slick-next {
+  right: -30px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0 12px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 100rem;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+}
+.slick-dots .slick-active button {
+  background-color:#ff758f
+}
+
+/* footer*/
 .fa-brands {
   font-size: 100px;
 }
@@ -239,7 +335,6 @@ img {
   background-color: #e9ecef;
 }
 .footer-title {
-  font-family: "Noto Serif";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -255,13 +350,11 @@ img {
   border-bottom: solid 1px #ced4da;
 }
 .contact-details {
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #6c757d;
-
   padding-bottom: 6px;
 }
 .contact-info {
