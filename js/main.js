@@ -22,7 +22,7 @@ const products = [
   },
   {
     productName: "p2",
-    productImg: "img/p2 laugh & learn 3in1.webp",
+    productImg: "img/optimus.png",
     productThum: {
       thum1: "img/p2.1.webp",
       thum2: "img/p2.1.webp",
