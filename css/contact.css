@@ -1,15 +1,19 @@
 .call-us {
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     background-color: #FFCCD5;
-    margin-bottom: 3rem;;
 }
 .call {
-    font-size: 1.55rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     letter-spacing: 1px;
     font-style: italic;
+}
+.or {
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 .email-text {
     text-align: center;

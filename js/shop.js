@@ -218,7 +218,7 @@ function renderProduct() {
           <div class="product-name">${product.productName}</div>
           <span class="original-price">$${product.originalPrice}</span>
           <span class="discount-price">$${finalPrice.toFixed(2)}</span>
-          <a href="#" class="btn btn-outline-primary btn-in-card">Add to Cart</a>
+          <button class="btn btn-outline-primary btn-in-card">Add to Cart</button>
       </div>`);
     
     console.log(displayedProds);
@@ -705,7 +705,6 @@ $(function () {
     renderProduct();
   });
 });
-
 
 
 $(function () {

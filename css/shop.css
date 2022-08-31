@@ -13,13 +13,15 @@
   line-height: 22px;
   color: #212529;
 }
-/* .filter-mobile {
+.filter-mobile {
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  color: #343a40;
-  border: solid 1px #adb5bd;
-} */
+  color: #ff758f;
+  width: 3.75rem;
+  padding: .375rem 2.25rem .375rem .75rem;
+  display: none;
+}
 .reset {
   font-weight: 400;
   font-size: 14px;
@@ -101,9 +103,6 @@ border: solid 1px #495057;
  
   bottom: 0;
   z-index: 10;
-}
-.filter-mobile {
-  display: none;
 }
 
 .filter-by-desktop {

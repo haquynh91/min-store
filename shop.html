@@ -43,37 +43,45 @@
       <div class="base-text">Freeshipping on oders over $25! Code: SHIPMAGIC</div>
       <div class="header-logo">
         <div class="ms-container">
-          <div class="row d-flex a-center">
-            <div class="col-12 col-md-6">
+          <div class="row d-flex j-between a-center">
+            <div class="col-12 col-md-7">
               <img
                 src="img/logo.png"
                 alt="logo"
-                style="object-fit: fill; max-height: 48px"
+                style="object-fit: fill; max-height: 2.5rem"
               />
             </div>
-            <div class="col-12 col-md-6 d-flex j-between">
+            <div class="col-12 col-md-5 d-flex j-between">
               <div class="search-bar relative" style="width: 100%">
                 <i
                   class="fa-solid fa-magnifying-glass absolute"
                   id="btn-search"
-                  style="font-size: 16px; color: #adb5bd; top: 6px; left: 8px"
+                  style="
+                    font-size: 0.8rem;
+                    color: #adb5bd;
+                    top: 0.5rem;
+                    left: 0.5rem;
+                  "
                 ></i>
                 <input
                   type="search"
                   name="search"
                   id="search"
-                  placeholder="What are you looking for?"
+                  placeholder="Search..."
                 />
               </div>
               <div
                 class="d-flex j-between a-center icon"
-                style="width: 60px; padding-left: 16px"
+                style="width: 3.5rem; padding-left: 2rem"
               >
-                <a class="icon-user" href="#"
+                <a class="icon-user" href="login.html"
                   ><i class="fa-regular fa-circle-user"></i
                 ></a>
-                <a class="icon-cart" href="#"
-                  ><i class="fa-solid fa-cart-shopping"></i
+                <a class="icon-cart" href="cart.html"
+                  ><i
+                    class="fa-solid fa-cart-shopping"
+                    style="margin-left: 0.5rem"
+                  ></i
                 ></a>
               </div>
             </div>
@@ -104,16 +112,22 @@
             <span class="reset" id="reset" onclick>Reset all</span>
           </div>
           <div class="col-12 col-sm-9 d-flex j-between align-items-end" style="margin-bottom: 8px;">
+          <div>
+            <div class="btn btn-outline-primary filter filter-mobile" style="height:100%">Filter</div>
           <div class="filter-result" id="results"></div> <!-- Showing 1-12 of 28 results -->
-            <div class="btn filter filter-mobile" style="height:100%">Filter</div>
-            <div class="sort relative">
-              <select class="form-select sort-options" aria-label="Default select example">
-                <option selected>Featured items</option>
-                <option value="1">Price: Low to high</option>
-                <option value="2">Price: High to low</option>
-              </select>
-              <lable for="sort-by" class="sort-by absolute"><span class="sort-by">Sort by</span></lable>
-            </div>
+        </div> 
+        <div>
+          <div class="sort relative">
+            <select class="form-select sort-options" aria-label="Default select example">
+              <option selected>Featured items</option>
+              <option value="1">Price: Low to high</option>
+              <option value="2">Price: High to low</option>
+            </select>
+            <lable for="sort-by" class="sort-by absolute"><span class="sort-by">Sort by</span></lable>
+          </div>
+          <div class="filter filter-mobile" style="height: 22px; border:none"></div>
+        </div>
+            
           </div>
         </div>
       </div>
@@ -130,32 +144,32 @@
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse data-bs-parent collapse show" aria-labelledby="panelsStayOpen-headingOne">
                 <div class="accordion-body">
                   <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="price" value="0_25" id="flexCheckDefault"/>
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" name="price" value="0_25" id="$0-$25"/>
+                  <label class="form-check-label" for="$0-$25">
                     $0-$25 <span class="count"></span>
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="price" value="25_50" id="flexCheckDefault"/>
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" name="price" value="25_50" id="$25-$50"/>
+                  <label class="form-check-label" for="$25-$50">
                     $25-$50 <span class="count"></span>
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="price" value="50_75" id="flexCheckDefault"/>
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" name="price" value="50_75" id="$50-$75"/>
+                  <label class="form-check-label" for="$50-$75">
                     $50-$75 <span class="count"></span>
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="price" value="75_100" id="flexCheckDefault"/>
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" name="price" value="75_100" id="$75-$100"/>
+                  <label class="form-check-label" for="$75-$100">
                     $75-$100 <span class="count"></span>
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="price" value="100" id="flexCheckDefault"/>
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" name="price" value="100" id="$100+"/>
+                  <label class="form-check-label" for="$100+">
                     $100+ <span class="count"></span>
                   </label>
                 </div>
@@ -171,20 +185,20 @@
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                 <div class="accordion-body">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="discount" value="10" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" name="discount" value="10" id="10% off">
+                    <label class="form-check-label" for="10% off">
                       10% off
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="discount" value="20" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" name="discount" value="20" id="20% off">
+                    <label class="form-check-label" for="20% off">
                       20% off
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="discount" value="30" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" name="discount" value="30" id="30% off">
+                    <label class="form-check-label" for="30% off">
                       30% off
                     </label>
                   </div>
@@ -201,50 +215,50 @@
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                 <div class="accordion-body">
                   <div class="form-check">
-                    <input class="form-check-input" id="doll" type="checkbox" name="category" value="doll" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" id="doll" type="checkbox" name="category" value="doll">
+                    <label class="form-check-label" for="doll">
                       Dolls & Dollhouses 
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" id="game" type="checkbox" name="category" value="game" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" id="game" type="checkbox" name="category" value="game">
+                    <label class="form-check-label" for="game">
                       Games & Pluzzles
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" id="building" type="checkbox" name="category" value="building" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" id="building" type="checkbox" name="category" value="building">
+                    <label class="form-check-label" for="building">
                       Building Set Toys
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" id="outdoor" type="checkbox" name="category" value="outdoor" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" id="outdoor" type="checkbox" name="category" value="outdoor">
+                    <label class="form-check-label" for="outdoor">
                       Outdoor & Sport Toys
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" id="figure" type="checkbox" name="category" value="doll" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" id="figure" type="checkbox" name="category" value="action">
+                    <label class="form-check-label" for="figure">
                       Action Figures 
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" id="remote" type="checkbox" name="category" value="doll" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" id="remote" type="checkbox" name="category" value="remote">
+                    <label class="form-check-label" for="remote">
                       Remote Control Toys 
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" id="art" type="checkbox" name="category" value="doll" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" id="art" type="checkbox" name="category" value="art">
+                    <label class="form-check-label" for="art">
                       Art & Crafts
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" id="instrument" type="checkbox" name="category" value="doll" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" id="instrument" type="checkbox" name="category" value="instrument">
+                    <label class="form-check-label" for="instrument">
                       Instruments
                     </label>
                   </div>
@@ -565,7 +579,7 @@
           <div class="d-flex j-center f-wrap" id="render">
             </div>
           <!-- pagination -->
-          <div class="row" style="margin-top: 10px;">
+          <div class="row">
             <nav aria-label="Page navigation example">
               <ul class="pagination j-center">
                 <li class="page-item">
@@ -592,7 +606,7 @@
 
    
     <!-- FOOTER -->
-    <section class="footer" style="margin-bottom: 0; margin-top: 50px;">
+    <section class="footer" style="margin-bottom: 0; margin-top: 50px">
       <div class="ms-container" style="padding-top: 24px; padding-bottom: 24px">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4">
@@ -614,7 +628,7 @@
             <div class="contact-details">
               <div>
                 <span class="contact-info">Address:</span>
-                <span>10706 Westchase, Tampa, FLorida, USA</span>
+                <span>10706 Westchase, Tampa, FLorida, US</span>
               </div>
             </div>
             <div class="contact-details">
@@ -657,13 +671,19 @@
                 </div>
                 <div class="d-flex j-center">
                   <div class="social-logo">
-                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.facebook.com/"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
                   </div>
                   <div class="social-logo">
-                    <i class="fa-brands fa-square-instagram"></i>
+                    <a href="https://www.instagram.com/"
+                      ><i class="fa-brands fa-square-instagram"></i
+                    ></a>
                   </div>
                   <div class="social-logo">
-                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://twitter.com/"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -676,7 +696,7 @@
     <div class="filter-mobile-content">
       <div class="filter-mobile-heading d-flex j-between mt-1 mb-1">
         <div class="reset" style = "padding: 0.1rem 0.3rem;">Reset</div>
-        <div class="filter">Filter</div>
+        <div class="filter" style="color:#ff4d6d">Filter</div>
         <div class="done" style = "padding: 0.1rem 0.3rem;">Done</div>
       </div>
       <div
