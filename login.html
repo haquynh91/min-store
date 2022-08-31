@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact-MinStore</title>
+    <title>Home-MinStore</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -47,14 +47,12 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <section class="header" style="margin-bottom: 0">
-      <div class="base-text">
-        Freeshipping on oders over $25! Code: SHIPMAGIC
-      </div>
+    <section class="header" style="margin-bottom: 0;">
+      <div class="base-text">Freeshipping on oders over $25! Code: SHIPMAGIC</div>
       <div class="header-logo">
         <div class="ms-container">
           <div class="row d-flex j-between a-center">
@@ -70,12 +68,7 @@
                 <i
                   class="fa-solid fa-magnifying-glass absolute"
                   id="btn-search"
-                  style="
-                    font-size: 0.8rem;
-                    color: #adb5bd;
-                    top: 0.5rem;
-                    left: 0.5rem;
-                  "
+                  style="font-size: 0.8rem; color: #adb5bd; top: 0.5rem; left: 0.5rem"
                 ></i>
                 <input
                   type="search"
@@ -91,11 +84,8 @@
                 <a class="icon-user" href="#"
                   ><i class="fa-regular fa-circle-user"></i
                 ></a>
-                <a class="icon-cart" href="#"
-                  ><i
-                    class="fa-solid fa-cart-shopping"
-                    style="margin-left: 0.5rem"
-                  ></i
+                <a class="icon-cart" href="cart.html"
+                  ><i class="fa-solid fa-cart-shopping" style="margin-left: 0.5rem"></i
                 ></a>
               </div>
             </div>
@@ -109,60 +99,58 @@
         <div><a class="menu-btn" href="contact.html">Contact</a></div>
       </div>
     </section>
-    <section class="contact-us">
-      
-        <div class="call-us">
-            <div class="ms-container">
-                <div class="call">Need an answer right away?</div>
-          <div class="call">Call us Monday thru Friday 9am - 5pm PST</div>
-          <div class="phone">+1 (012) 345-6789</div>
-            </div>
-          
-        </div>
+    
+    <section class="login ms-container relative">
         
-        <div class="ms-container email-us">
             
-            <div class="email-text">
-                <div class="email">OR SEND US A MESSAGE ANY TIME</div>
-                <p class="email">We will get back to you within 24-48 hours</p>
-            </div>
-            <div class="email-form d-flex j-center">
-                <form class="col-12 col-sm-6">
-                    <div class="email-input">
-                      <label for="inputTopic" class="form-label">Topic</label>
-                      <select id="inputTopic" class="form-select">
-                        <option selected>Please select</option>
-                        <option>My Order</option>
-                        <option>Returns & Exchanges</option>
-                        <option>Store Information</option>
-                        <option>Other</option>
-                      </select>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-sm-6 email-input">
-                            <label for="inputName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="inputName" />
-                          </div>
-                          <div class="col-12 col-sm-6 email-input">
-                            <label for="inputEmail" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="inputEmail" />
-                          </div>
-                    </div>
-                    
-                    <div class="email-input">
-                      <label for="inputMessage" class="form-label">Message</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
+                <div class="block1 col-12 col-sm-6">
+                    <div class="login-heading"> Log In To MinStore</div>
+                <span>New to Minstore?</span> <span>Create Account</span>
+                <div>OR</div>
+                <div class="return">Return to Store</div>
+                </div>
+                <div class="block2 form-login col-12 col-sm-5">
+                    <form>
+                        <input type="text" class="form-sign-in" id="email" name="email" placeholder="Email"> <br>
+                        <input type="password" class="form-sign-in" id="pwd" name="pwd" placeholder="Password">
+                      </form>
+                      <div class="btn btn-primary btn-in-checkout mt-1 mb-1">
+                        Sign in
+                        <a href="#"></a>
+                      </div>
+                      <div class="btn-underline d-flex j-center">
+                        <a href="#">Forgot your password?</a>
+                      </div>
+                      <div class="or">OR</div>
+                      <div class="btn btn-outline-primary btn-in-checkout mt-1 mb-1">
+                        Sign in with Google
+                        <a href="#"></a>
+                      </div>
+                      <div class="btn btn-outline-primary btn-in-checkout mt-1 mb-1">
+                        Sign in with Facebook
+                        <a href="#"></a>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" checked name="price" value="" id="flexCheckDefault"/>
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Check here to indicate that you have agree to the terms & conditions
+                        </label>
+                      </div>
+                </div>
+                <div class="block3 background-img col-12 col-sm-6" >
+                    <img src="img/background2.webp" alt="">
+                </div>
+                
+            
         
-                  </form>
-            </div>
-          
-        </div>
-      
     </section>
 
+    
+
+   
+
     <!-- FOOTER -->
-    <section class="footer" style="margin-bottom: 0; margin-top: 50px">
+    <section class="footer" style="margin-bottom: 0; margin-top: 50px;">
       <div class="ms-container" style="padding-top: 24px; padding-bottom: 24px">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4">

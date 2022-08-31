@@ -1,8 +1,14 @@
-// Product-type Filter
-$(function () {
-  $(".product-type").hide();
-  //   $("#panelsStayOpen-collapseThree").hide();
-});
+// $(".filter-mobile").hide();
+// $(".filter-mobile-content").hide();
+// @media (min-width: 768px) {
+//   $(".filter-mobile").show();
+//   $("#filer").hide();
+//   $("#filer-detail").hide();
+// };
+// $(function () {
+// $(".filter-mobile").click(function () {
+// $(".filer-mobile-content").show();
+// }
 // $(function () {
 //   $("#doll").click(function () {
 //     $(".product-type").show();
@@ -692,10 +698,23 @@ renderProduct();
 
 //Reset button
 $(function () {
-  $("#reset").click(function () {
-    $('input[type="checkbox"][name="price"]').prop("checked", false);
+  $(".reset").click(function () {
+    $('input[type="checkbox"]').prop("checked", false);
     useFilter = false;
     currentPage = 1;
     renderProduct();
+  });
+});
+
+
+
+$(function () {
+  $(".filter-mobile").click(function () {
+    $(".filter-mobile-content").show();
+  });
+});
+$(function () {
+  $(".done").click(function () {
+    $(".filter-mobile-content").hide();
   });
 });

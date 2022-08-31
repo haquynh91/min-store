@@ -13,6 +13,13 @@
   line-height: 22px;
   color: #212529;
 }
+/* .filter-mobile {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #343a40;
+  border: solid 1px #adb5bd;
+} */
 .reset {
   font-weight: 400;
   font-size: 14px;
@@ -41,6 +48,16 @@
   top: -8px;
   left: 16px;
 }
+.accordion-header {
+  font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #FF4D6D !important;
+background-color: #ff758f !important;
+}
+.accordion-header:focus {
+  outline: none;
+}
 .accordion-button {
     font-weight: 400;
 font-size: 14px;
@@ -48,6 +65,15 @@ line-height: 22px;
 color: #495057;
 padding: 0.5rem 0.5rem;
 }
+.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #FF758F;
+}
+
+/* Doi mau mui ten trong filter */
+/* .accordion-button{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+} */
 
 .accordion-body {
     font-weight: 400;
@@ -65,3 +91,51 @@ color: #495057;
 border: solid 1px #495057;
 }
 
+.filter-mobile-content {
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color:  #FFCCD5;
+  display: none;
+  position: fixed;
+  width: 100%;
+ 
+  bottom: 0;
+  z-index: 10;
+}
+.filter-mobile {
+  display: none;
+}
+
+.filter-by-desktop {
+  display: block !important;
+}
+
+@media (max-width : 768px) {
+  .filter-mobile {
+    display: block;
+  }
+  .filter-by-desktop {
+    display: none !important;}
+  .filter-left {
+    display: none !important;
+  }
+}
+
+.filter-mobile-content .form-check {
+  padding-right: 0.8rem;
+}
+
+.accordion-button:not(.collapsed)::after{
+  background-image: url(/img/down.svg);
+}
+.form-check-input:checked {
+  background-color:#FF758F;
+  border-color: #FF758F;
+}
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 117, 143, 0.25);
+}
+
+.product-item {
+  margin-bottom: 1.5rem;
+}

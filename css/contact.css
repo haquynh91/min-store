@@ -1,0 +1,26 @@
+.call-us {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #FFCCD5;
+    margin-bottom: 3rem;;
+}
+.call {
+    font-size: 1.55rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.email-text {
+    text-align: center;
+}
+.email-text>div {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.email-input {
+    margin-bottom: 0.75rem;
+}
+.email-input .form-label {
+    margin-bottom: 0.2rem;
+}

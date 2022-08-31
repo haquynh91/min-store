@@ -1,0 +1,43 @@
+.login {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;;
+}
+.login-heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+.form-sign-in {
+    border:solid 1px #ADB5BD;
+    border-radius: 8px;
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+.form-login {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    border: solid 1px #ADB5BD;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+}
+.btn-in-checkout {
+width: 100%;
+}
+.or {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+@media (min-width : 768px) {
+    .form-login {
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+     
+  }
+}

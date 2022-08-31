@@ -21,7 +21,7 @@
 }
 
 .product-right>* {
-  margin-bottom: 8px;
+  margin-bottom: 0.75rem;
 }
 .product-name {
   font-weight: 700;
@@ -40,24 +40,7 @@ padding: 5px 12px;
 width: 78px;
 border-radius: 8px;
 }
-.btn-negative {
-  padding: 0 8px;
-  border-right: 0;
-}
-.btn-positive {
-  padding: 0 8px;
-  border-left: 0;
-}
-#quantity {
-  width: 50px;
-}
-.qty {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  color: #495057;
-  text-align: center;
-}
+
 .btn-in-single-page {
   padding: 4px 48px;
 }

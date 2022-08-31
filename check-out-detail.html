@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact-MinStore</title>
+    <title>Home-MinStore</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -47,14 +47,12 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/check-out-detail.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <section class="header" style="margin-bottom: 0">
-      <div class="base-text">
-        Freeshipping on oders over $25! Code: SHIPMAGIC
-      </div>
+    <section class="header" style="margin-bottom: 0;">
+      <div class="base-text">Freeshipping on oders over $25! Code: SHIPMAGIC</div>
       <div class="header-logo">
         <div class="ms-container">
           <div class="row d-flex j-between a-center">
@@ -70,12 +68,7 @@
                 <i
                   class="fa-solid fa-magnifying-glass absolute"
                   id="btn-search"
-                  style="
-                    font-size: 0.8rem;
-                    color: #adb5bd;
-                    top: 0.5rem;
-                    left: 0.5rem;
-                  "
+                  style="font-size: 0.8rem; color: #adb5bd; top: 0.5rem; left: 0.5rem"
                 ></i>
                 <input
                   type="search"
@@ -92,10 +85,7 @@
                   ><i class="fa-regular fa-circle-user"></i
                 ></a>
                 <a class="icon-cart" href="#"
-                  ><i
-                    class="fa-solid fa-cart-shopping"
-                    style="margin-left: 0.5rem"
-                  ></i
+                  ><i class="fa-solid fa-cart-shopping" style="margin-left: 0.5rem"></i
                 ></a>
               </div>
             </div>
@@ -109,60 +99,182 @@
         <div><a class="menu-btn" href="contact.html">Contact</a></div>
       </div>
     </section>
-    <section class="contact-us">
-      
-        <div class="call-us">
-            <div class="ms-container">
-                <div class="call">Need an answer right away?</div>
-          <div class="call">Call us Monday thru Friday 9am - 5pm PST</div>
-          <div class="phone">+1 (012) 345-6789</div>
+    
+<section class="ms-container">
+    <div class="back-to-cart">< Back to My Cart </div>
+    <div class="check-out-detail">
+      <div class="row">
+        <div class="col-8 check-out-detail-left">
+          <div class="shipping-add checkout-bg">
+            <div class="check-out-detail-heading">
+              Shipping Address
             </div>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputFirstName4" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName">
+              </div>
+              <div class="col-md-6">
+                <label for="inputLastName4" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName4">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="col-md-3">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-5">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPhoneNumber4" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="phoneNumber">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+            </form>
+          </div>
+          <div class="payment checkout-bg">
+            <div class="check-out-detail-heading">
+              Payment Method
+            </div>
+            <div class="tabs">
+              <ul class="nav nav-tabs">
+                <li class=" tabs-title-1" id="tabs-title-1">
+                  Payment Card
+                <li class="tabs-title-2" id="tabs-title-2">
+                  Paypal
+                </li>
+              </ul>
+              <div class="tabs-content active" id="tab1">
+                <form class="row g-3">
+                  <div class="col-md-8">
+                    <label for="inputFirstName4" class="form-label">Card Number</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="1234 XXX 5678">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputLastName4" class="form-label">Expiration Date</label>
+                    <input type="text" class="form-control" id="inputLastName4" placeholder="mm/dd/yy">
+                  </div>
+                  <div class="col-md-10">
+                    <label for="inputAddress" class="form-label">Cardholder's Name</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Van A Nguyen">
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputAddress2" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="123">
+                  </div>
+                  
+                </form>
+              </div>
+              <div class="tabs-content" id="tab2">
+                <p>
+                  You'll be directed to PayPal to enter your payment details and then directed back to MinStore to confirm your order.
+                </p>
+                <div class="btn btn-primary btn-in-checkout mt-1 mb-1">
+                  Pay with Paypal
+                  <a href="#"></a>
+              </div>
+            </div>
+          </div>
           
+          </div>
+          <div class="btn btn-primary">
+            Place Order
+            <a href="#"></a>
+          </div>
         </div>
-        
-        <div class="ms-container email-us">
-            
-            <div class="email-text">
-                <div class="email">OR SEND US A MESSAGE ANY TIME</div>
-                <p class="email">We will get back to you within 24-48 hours</p>
+        <div class="col-3 check-out-detail-right">
+          <div class="order-summary checkout-bg">
+            <div class="cart-right-heading">Order Summary</div>
+            <div class="summary-details">
+              <div class="cart-subtotal d-flex j-between">
+                <span>Subtotal</span> <span id="subtotal">$329.95</span>
+              </div>
+              <div class="cart-discount d-flex j-between">
+                <span>Discount</span> <span id="cart-discount">$20</span>
+              </div>
+              <div class="cart-shipping-fee d-flex j-between">
+                <span>Shipping</span> <span id="cart-shipping-fee">FREE</span>
+              </div>
             </div>
-            <div class="email-form d-flex j-center">
-                <form class="col-12 col-sm-6">
-                    <div class="email-input">
-                      <label for="inputTopic" class="form-label">Topic</label>
-                      <select id="inputTopic" class="form-select">
-                        <option selected>Please select</option>
-                        <option>My Order</option>
-                        <option>Returns & Exchanges</option>
-                        <option>Store Information</option>
-                        <option>Other</option>
-                      </select>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-sm-6 email-input">
-                            <label for="inputName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="inputName" />
-                          </div>
-                          <div class="col-12 col-sm-6 email-input">
-                            <label for="inputEmail" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="inputEmail" />
-                          </div>
-                    </div>
-                    
-                    <div class="email-input">
-                      <label for="inputMessage" class="form-label">Message</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-        
-                  </form>
+            <div class="order-total d-flex j-between">
+              <span>Order Total</span>
+              <span id="cart-order-total">$309.95</span>
             </div>
+          </div>
           
-        </div>
+          <div class="order-detail checkout-bg">
+            <div class="cart-right-heading">Order Detail</div>
+            <div class="row">
+              <div class="left col-5">
+                <img src="img/optimus.png" alt="" >
+              </div>
+              <div class="right col-7">
+                <div class="product-name">Optimus Prime</div>
+                <div class="product-detail d-flex j-between">
+                  <div class="final-price">$107.29</div>
+                  <div class="qty">Qty: 1</div>
+                </div>
+              </div>
+              <div class="left col-5">
+                <img src="img/mickey mouse.png" alt="" >
+              </div>
+              <div class="right col-7">
+                <div class="product-name">Mickey Mouse Space</div>
+                <div class="product-detail d-flex j-between">
+                  <div class="final-price">$19.99</div>
+                  <div class="qty">Qty: 2</div>
+                </div>
+              </div>
+              <div class="left col-5">
+                <img src="img/space mission.png" alt="" >
+              </div>
+              <div class="right col-7">
+                <div class="product-name">Space Mission</div>
+                <div class="product-detail d-flex j-between">
+                  <div class="final-price">$59.99</div>
+                  <div class="qty">Qty: 1</div>
+                </div>
+              </div>
+              <div class="left col-5">
+                <img src="img/olivia.png" alt="" >
+              </div>
+              <div class="right col-7">
+                <div class="product-name">Olivia's Space Academy</div>
+                <div class="product-detail d-flex j-between">
+                  <div class="final-price">$69.99</div>
+                  <div class="qty">Qty: 1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
       
-    </section>
+      </div>
+    
+</section>
+    
 
     <!-- FOOTER -->
-    <section class="footer" style="margin-bottom: 0; margin-top: 50px">
+    <section class="footer" style="margin-bottom: 0; margin-top: 50px;">
       <div class="ms-container" style="padding-top: 24px; padding-bottom: 24px">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4">

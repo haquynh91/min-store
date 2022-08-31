@@ -1,0 +1,30 @@
+
+.checkout-heading {
+    font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #343A40;
+}
+
+.form-sign-in {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ADB5BD;
+    border:solid 1px #ADB5BD;
+    border-radius: 8px;
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+.guest p {
+    font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #ADB5BD;
+}
+.btn-in-checkout {
+width: 100%;
+}

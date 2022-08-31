@@ -58,13 +58,23 @@
   background-color: #ffccd5;
   border-radius: 8px;
   padding: 4px 8px;
+  transition: 1s;
 }
 .ages:hover {
-  background-color: #FFB3C1;
+  background-color: #FF8FA3;
+  transition: 1s;
 }
 .brand-logo {
   padding: 0 16px;
   align-items: baseline;
+  transition: 0.4s;
+}
+.brand-logo img {
+  text-align: center;
+  width: 50%;
+}
+.logo-img {
+  text-align: center;
 }
 .brand-logo:hover {
   transform: scale(1.1);
@@ -72,8 +82,8 @@
 }
 .category-name {
   color: #a4133c;
-  left: 20px;
-  bottom: 8px;
+  left: 1.25rem;
+  bottom: 0.6rem;
   z-index: 1;
 }
 .category-img {
@@ -82,8 +92,14 @@ padding-bottom: 10px;
 .category-img img{
   border-radius: 8px;
 }
+.category{
+  margin-bottom: 1rem;
+  transition: 0.4s;
+}
 .category:hover {
   transform: scale(1.05);
+  transition: 0.4s;
+  
 }
 /* Section Video this week */
 .video-this-week {

@@ -82,7 +82,7 @@
       </div>
       <div class="menu d-flex j-center">
         <div><a class="menu-btn" href="index.html">Home</a></div>
-        <div><a class="menu-btn" href="shop.html">Shop</a></div>
+        <div><a class="menu-btn" style="color:#ff4d6d;" href="shop.html">Shop</a></div>
         <div><a class="menu-btn" href="about.html">About</a></div>
         <div><a class="menu-btn" href="contact.html">Contact</a></div>
       </div>
@@ -98,14 +98,15 @@
 
       <!-- FiLter-SortBy -->
       <div>
-        <div class="row align-items-end">
-          <div class="col-3 d-flex j-between" style="padding-right: 5%;">
+        <div class="row align-items-end" id="filter">
+          <div class="col-12 col-sm-3 filter-left d-flex j-between" style="padding-right: 5%; margin-bottom: 8px;">
             <span class="filter">Filter by</span>
             <span class="reset" id="reset" onclick>Reset all</span>
           </div>
-          <div class="col-9 d-flex j-between align-items-end">
-            <div class="filter-result" id="results"></div>
-            <div class="sort relative" style="margin-bottom: 8px;">
+          <div class="col-12 col-sm-9 d-flex j-between align-items-end" style="margin-bottom: 8px;">
+          <div class="filter-result" id="results"></div> <!-- Showing 1-12 of 28 results -->
+            <div class="btn filter filter-mobile" style="height:100%">Filter</div>
+            <div class="sort relative">
               <select class="form-select sort-options" aria-label="Default select example">
                 <option selected>Featured items</option>
                 <option value="1">Price: Low to high</option>
@@ -116,10 +117,10 @@
           </div>
         </div>
       </div>
-
+      
       <div class="row">
-        <div class="col-3 d-flex j-between" style="padding-right: 5%;">
-          <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="filter-by-desktop col-3 d-flex j-between" id = "filter-detail" style="padding-right: 5%;">
+          <div class="accordion" style="width: 100%" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
@@ -198,29 +199,53 @@
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                <div class="accordion-body" id="doll">
+                <div class="accordion-body">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="category" value="doll" id="flexCheckDefault">
+                    <input class="form-check-input" id="doll" type="checkbox" name="category" value="doll" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                       Dolls & Dollhouses 
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="category" value="game" id="flexCheckDefault">
+                    <input class="form-check-input" id="game" type="checkbox" name="category" value="game" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                       Games & Pluzzles
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="category" value="building" id="flexCheckDefault">
+                    <input class="form-check-input" id="building" type="checkbox" name="category" value="building" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                       Building Set Toys
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="category" value="outdoor" id="flexCheckDefault">
+                    <input class="form-check-input" id="outdoor" type="checkbox" name="category" value="outdoor" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                       Outdoor & Sport Toys
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="figure" type="checkbox" name="category" value="doll" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Action Figures 
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="remote" type="checkbox" name="category" value="doll" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Remote Control Toys 
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="art" type="checkbox" name="category" value="doll" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Art & Crafts
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="instrument" type="checkbox" name="category" value="doll" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Instruments
                     </label>
                   </div>
 
@@ -537,7 +562,7 @@
           </div>
         </div>
         <div class="col-9">
-          <div class="row d-flex j-between" id="render">
+          <div class="d-flex j-center f-wrap" id="render">
             </div>
           <!-- pagination -->
           <div class="row" style="margin-top: 10px;">
@@ -647,6 +672,866 @@
         </div>
       </div>
     </section>
+
+    <div class="filter-mobile-content">
+      <div class="filter-mobile-heading d-flex j-between mt-1 mb-1">
+        <div class="reset" style = "padding: 0.1rem 0.3rem;">Reset</div>
+        <div class="filter">Filter</div>
+        <div class="done" style = "padding: 0.1rem 0.3rem;">Done</div>
+      </div>
+      <div
+        class="accordion"
+        style="width: 100%;"
+        id="accordionPanelsStayOpenExample"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Price
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse data-bs-parent collapse show"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body d-flex f-wrap">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="price"
+                  value="0_25"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  $0-$25 <span class="count"></span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="price"
+                  value="25_50"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  $25-$50 <span class="count"></span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="price"
+                  value="50_75"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  $50-$75 <span class="count"></span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="price"
+                  value="75_100"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  $75-$100 <span class="count"></span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="price"
+                  value="100"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  $100+ <span class="count"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Discount Range
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body d-flex f-wrap">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="discount"
+                  value="10"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  10%
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="discount"
+                  value="20"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  20%
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="discount"
+                  value="30"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  30%
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              Category
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree"
+          >
+            <div class="accordion-body d-flex f-wrap" id="doll">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="category"
+                  value="game"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Games & Pluzzles
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="category"
+                  value="building"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Building Set Toys
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="category"
+                  value="doll"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Dolls & Dollhouses
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="figure" type="checkbox" name="category" value="doll" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Action Figures 
+                </label>
+              </div>
+              
+              
+              
+              <div class="form-check">
+                <input class="form-check-input" id="remote" type="checkbox" name="category" value="doll" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Remote Control Toys 
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="art" type="checkbox" name="category" value="doll" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Art & Crafts
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="category"
+                  value="outdoor"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Outdoor & Sport Toys
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" id="instrument" type="checkbox" name="category" value="doll" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Instruments
+                </label>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              Age
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour"
+          >
+            <div class="accordion-body d-flex f-wrap">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="age"
+                  value="0_2"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  0-2
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="age"
+                  value="2_4"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  2-4
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="age"
+                  value="4_8"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  4-8
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="age"
+                  value="8_12"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  8-12
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="age"
+                  value="12"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  12+
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive"
+            >
+              Gender
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFive"
+          >
+            <div class="accordion-body d-flex f-wrap">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="gender"
+                  value="boy"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Boy
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="gender"
+                  value="girl"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Girl
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="gender"
+                  value="unisex"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Unisex
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSix"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSix"
+            >
+              Brand
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSix"
+          >
+            <div class="accordion-body d-flex f-wrap">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value="nerf"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Nerf
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value="barbie"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Barbie
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value="lego"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Lego
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value="lol"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  L.O.L Surprise
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value="fisher"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Fisher-price
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value="wheel"
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Hot Wheels
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="accordion-item">
+          <h2
+            class="accordion-header product-type"
+            id="panelsStayOpen-headingSeven"
+          >
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSeven"
+            >
+              Product Type
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSeven"
+          >
+            <div class="accordion-body d-flex f-wrap">
+              <div class="form-check doll">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Baby Dolls
+                </label>
+              </div>
+              <div class="form-check doll">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Mini Dolls
+                </label>
+              </div>
+              <div class="form-check doll">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Princess Dolls
+                </label>
+              </div>
+              <div class="form-check doll">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Dollhouses & Furniture
+                </label>
+              </div>
+              <div class="form-check games">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Board Games
+                </label>
+              </div>
+              <div class="form-check games">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Card Games
+                </label>
+              </div>
+              <div class="form-check games">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Puzzles
+                </label>
+              </div>
+              <div class="form-check building">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  House building Set
+                </label>
+              </div>
+              <div class="form-check building">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Animal building Set
+                </label>
+              </div>
+              <div class="form-check building">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Vehicle building Set
+                </label>
+              </div>
+              <div class="form-check outdoor">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Balls
+                </label>
+              </div>
+              <div class="form-check outdoor">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Bikes
+                </label>
+              </div>
+              <div class="form-check outdoor">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Scooters
+                </label>
+              </div>
+              <div class="form-check outdoor">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Skateboards
+                </label>
+              </div>
+              <div class="form-check outdoor">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Pogo Sticks
+                </label>
+              </div>
+              <div class="form-check action">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Gym Set
+                </label>
+              </div>
+              <div class="form-check action">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Robot
+                </label>
+              </div>
+              <div class="form-check action">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Hero Figures
+                </label>
+              </div>
+              <div class="form-check remote">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Stunt Drone
+                </label>
+              </div>
+              <div class="form-check remote">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Road Racing Set
+                </label>
+              </div>
+              <div class="form-check remote">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Cars & Helicopters
+                </label>
+              </div>
+              <div class="form-check art">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Color Pack
+                </label>
+              </div>
+              <div class="form-check art">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Painting Kit
+                </label>
+              </div>
+              <div class="form-check art">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Craf Kit
+                </label>
+              </div>
+              <div class="form-check art">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Beauty Set
+                </label>
+              </div>
+              <div class="form-check instruments">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Hand Percussion
+                </label>
+              </div>
+              <div class="form-check instruments">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Ukulele
+                </label>
+              </div>
+              <div class="form-check instruments">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Piano
+                </label>
+              </div>
+              <div class="form-check instruments">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="brand"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Drums
+                </label>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.js"
       integrity="sha512-o/AhZ9sd5ShcZ0nvqWdEUWTLf5HkOysN6pRiQxjwMoiruEVHO59Zz9BFcWsKV7BDatBYTPDQSCtSzWND3XpqWw=="
