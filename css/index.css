@@ -59,6 +59,7 @@
   border-radius: 8px;
   padding: 4px 8px;
   transition: 1s;
+  cursor: pointer;
 }
 .ages:hover {
   background-color: #FF8FA3;

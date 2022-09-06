@@ -15,6 +15,7 @@
 }
 .product-list {
   border-top: solid 1px #dee2e6;
+  margin-top:0;
 }
 .heading {
   font-weight: 700;
@@ -87,7 +88,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-
   color: #495057;
 }
 .cart-order-total {

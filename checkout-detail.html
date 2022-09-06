@@ -51,8 +51,10 @@
   </head>
   <body>
     <!-- HEADER -->
-    <section class="header" style="margin-bottom: 0;">
-      <div class="base-text">Freeshipping on oders over $25! Code: SHIPMAGIC</div>
+    <section class="header" style="margin-bottom: 0">
+      <div class="base-text">
+        Freeshipping on oders over $25! Code: SHIPMAGIC
+      </div>
       <div class="header-logo">
         <div class="ms-container">
           <div class="row d-flex j-between a-center">
@@ -84,17 +86,23 @@
               </div>
               <div
                 class="d-flex j-between a-center icon"
-                style="width: 3.5rem; padding-left: 2rem"
+                style="width: 3.5rem; margin-left: 2rem"
               >
                 <a class="icon-user" href="login.html"
                   ><i class="fa-regular fa-circle-user"></i
                 ></a>
-                <a class="icon-cart" href="cart.html"
+                <a class="icon-cart relative" href="cart.html"
                   ><i
                     class="fa-solid fa-cart-shopping"
                     style="margin-left: 0.5rem"
-                  ></i
-                ></a>
+                  ></i>
+                  <span
+                    class="position-absolute top-0 starts-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    4
+                    <span class="visually-hidden">qty</span>
+                  </span></a
+                >
               </div>
             </div>
           </div>
@@ -107,109 +115,144 @@
         <div><a class="menu-btn" href="contact.html">Contact</a></div>
       </div>
     </section>
-    
-<section class="ms-container">
-    <div class="back-to-cart">< Back to My Cart </div>
-    <div class="check-out-detail">
-      <div class="row">
-        <div class="col-8 check-out-detail-left">
+
+    <section class="ms-container">
+      <div class="back-to-cart">< Back to My Cart</div>
+      <div class="check-out-detail d-flex j-between">
+        <div class="col-md-7 col-lg-8 check-out-detail-left">
           <div class="shipping-add checkout-bg">
-            <div class="check-out-detail-heading">
-              Shipping Address
-            </div>
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label for="inputFirstName4" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName">
+            <div class="check-out-detail-heading">Shipping Address</div>
+            <form class="row g-6">
+              <div class="col-md-6 input-styles">
+                <label for="inputFirstName4" class="form-label"
+                  >First Name</label
+                >
+                <input type="text" class="form-control" id="firstName" />
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 input-styles">
                 <label for="inputLastName4" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="inputLastName4">
+                <input type="text" class="form-control" id="inputLastName4" />
               </div>
-              <div class="col-12">
+              <div class="col-12 input-styles">
                 <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="1234 Main St"
+                />
               </div>
-              <div class="col-12">
+              <div class="col-12 input-styles">
                 <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress2"
+                  placeholder="Apartment, studio, or floor"
+                />
               </div>
-              <div class="col-md-3">
+              <div class="col-4 col-md-3 input-styles">
                 <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip" />
               </div>
-              <div class="col-md-4">
+              <div class="col-8 col-md-5 input-styles">
                 <label for="inputState" class="form-label">State</label>
                 <select id="inputState" class="form-select">
                   <option selected>Choose...</option>
                   <option>...</option>
                 </select>
               </div>
-              <div class="col-md-5">
+              <div class="col-md-4 input-styles">
                 <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
+                <input type="text" class="form-control" id="inputCity" />
               </div>
-              <div class="col-md-6">
-                <label for="inputPhoneNumber4" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="phoneNumber">
+              <div class="col-6 input-styles">
+                <label for="inputPhoneNumber4" class="form-label"
+                  >Phone Number</label
+                >
+                <input type="number" class="form-control" id="phoneNumber" />
               </div>
-              <div class="col-md-6">
+              <div class="col-6 input-styles">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <input type="email" class="form-control" id="inputEmail4" />
               </div>
             </form>
           </div>
           <div class="payment checkout-bg">
-            <div class="check-out-detail-heading">
-              Payment Method
-            </div>
+            <div class="check-out-detail-heading">Payment Method</div>
             <div class="tabs">
               <ul class="nav nav-tabs">
-                <li class=" tabs-title-1" id="tabs-title-1">
-                  Payment Card
-                <li class="tabs-title-2" id="tabs-title-2">
-                  Paypal
-                </li>
+                <li class="tabs-title" id="tabs-title-1">Payment Card</li>
+
+                <li class="tabs-title" id="tabs-title-2">Paypal</li>
               </ul>
               <div class="tabs-content active" id="tab1">
-                <form class="row g-3">
-                  <div class="col-md-8">
-                    <label for="inputFirstName4" class="form-label">Card Number</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="1234 XXX 5678">
+                <form class="row g-6">
+                  <div class="col-md-7 col-lg-8 input-styles">
+                    <label for="inputFirstName4" class="form-label"
+                      >Card Number</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      placeholder="1234 XXX 5678"
+                    />
                   </div>
-                  <div class="col-md-4">
-                    <label for="inputLastName4" class="form-label">Expiration Date</label>
-                    <input type="text" class="form-control" id="inputLastName4" placeholder="mm/dd/yy">
+                  <div class="col-md-5 col-lg-4 input-styles">
+                    <label for="inputLastName4" class="form-label"
+                      >Expiration Date</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputLastName4"
+                      placeholder="mm/dd/yy"
+                    />
                   </div>
-                  <div class="col-md-10">
-                    <label for="inputAddress" class="form-label">Cardholder's Name</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="Van A Nguyen">
+                  <div class="col-md-9 col-lg-10 input-styles">
+                    <label for="inputAddress" class="form-label"
+                      >Cardholder's Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAddress"
+                      placeholder="Van A Nguyen"
+                    />
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-3 col-lg-2 input-styles">
                     <label for="inputAddress2" class="form-label">CVV</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="123">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputAddress2"
+                      placeholder="123"
+                    />
                   </div>
-                  
                 </form>
               </div>
               <div class="tabs-content" id="tab2">
                 <p>
-                  You'll be directed to PayPal to enter your payment details and then directed back to MinStore to confirm your order.
+                  You'll be directed to PayPal to enter your payment details and
+                  then directed back to MinStore to confirm your order.
                 </p>
-                <div class="btn btn-primary btn-in-checkout mt-1 mb-1">
+                <div class="btn btn-outline-secondary btn-in-checkout mt-1 mb-1">
                   Pay with Paypal
                   <a href="#"></a>
+                </div>
               </div>
             </div>
           </div>
+          <div class="d-flex j-center">
+            <div class="col-4 btn btn-primary ">
+              Place Order
+              <a href="#"></a>
+            </div>
+          </div>
           
-          </div>
-          <div class="btn btn-primary">
-            Place Order
-            <a href="#"></a>
-          </div>
         </div>
-        <div class="col-3 check-out-detail-right">
+        <div class="col-md-5 col-lg-4 check-out-detail-right">
           <div class="order-summary checkout-bg">
             <div class="cart-right-heading">Order Summary</div>
             <div class="summary-details">
@@ -228,58 +271,64 @@
               <span id="cart-order-total">$309.95</span>
             </div>
           </div>
-          
+
           <div class="order-detail checkout-bg">
             <div class="cart-right-heading">Order Detail</div>
-            <div class="row">
-              <div class="left col-5">
-                <img src="img/optimus.png" alt="" >
-              </div>
-              <div class="right col-7">
-                <div class="product-name">Optimus Prime</div>
-                <div class="product-detail d-flex j-between">
-                  <div class="final-price">$107.29</div>
-                  <div class="qty">Qty: 1</div>
+            <div class="order-content">
+              <div class="order-details d-flex">
+                <div class="left">
+                  <img src="img/optimus.png" alt="" />
+                </div>
+                <div class="right">
+                  <div class="product-name">Optimus Prime</div>
+                  <div class="product-detail d-flex j-between">
+                    <div class="final-price">$107.29</div>
+                    <div class="qty">Qty: 1</div>
+                  </div>
                 </div>
               </div>
-              <div class="left col-5">
-                <img src="img/mickey mouse.png" alt="" >
-              </div>
-              <div class="right col-7">
-                <div class="product-name">Mickey Mouse Space</div>
-                <div class="product-detail d-flex j-between">
-                  <div class="final-price">$19.99</div>
-                  <div class="qty">Qty: 2</div>
+              
+              <div class="order-details d-flex">
+                <div class="left">
+                  <img src="img/mickey mouse.png" alt="" />
+                </div>
+                <div class="right">
+                  <div class="product-name">Mickey Mouse Space</div>
+                  <div class="product-detail d-flex j-between">
+                    <div class="final-price">$19.99</div>
+                    <div class="qty">Qty: 2</div>
+                  </div>
                 </div>
               </div>
-              <div class="left col-5">
-                <img src="img/space mission.png" alt="" >
-              </div>
-              <div class="right col-7">
-                <div class="product-name">Space Mission</div>
-                <div class="product-detail d-flex j-between">
-                  <div class="final-price">$59.99</div>
-                  <div class="qty">Qty: 1</div>
+              <div class="order-details d-flex">
+                <div class="left">
+                  <img src="img/space mission.png" alt="" />
+                </div>
+                <div class="right">
+                  <div class="product-name">Space Mission</div>
+                  <div class="product-detail d-flex j-between">
+                    <div class="final-price">$59.99</div>
+                    <div class="qty">Qty: 1</div>
+                  </div>
                 </div>
               </div>
-              <div class="left col-5">
-                <img src="img/olivia.png" alt="" >
-              </div>
-              <div class="right col-7">
-                <div class="product-name">Olivia's Space Academy</div>
-                <div class="product-detail d-flex j-between">
-                  <div class="final-price">$69.99</div>
-                  <div class="qty">Qty: 1</div>
+              <div class="order-details d-flex">
+                <div class="left">
+                  <img src="img/olivia.png" alt="" />
+                </div>
+                <div class="right">
+                  <div class="product-name">Olivia's Space Academy</div>
+                  <div class="product-detail d-flex j-between">
+                    <div class="final-price">$69.99</div>
+                    <div class="qty">Qty: 1</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
-      
-      </div>
-    
-</section>
-    
+    </section>
 
     <!-- FOOTER -->
     <section class="footer" style="margin-bottom: 0; margin-top: 50px">

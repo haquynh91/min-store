@@ -102,3 +102,68 @@ padding: 0.4rem 0.4rem;
 .recommended {
   margin-top: 28px;
 }
+
+
+
+
+
+
+#featured,
+.thumbnail {
+  object-fit: cover;
+	cursor: pointer;
+	border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+#featured{
+	max-height: 50rem;
+}
+.thumbnail {
+  max-width: 6rem;
+	max-height: 5rem;
+	opacity: 0.5;
+	margin: 0.25rem;
+}
+.thumbnail:hover {
+	opacity:1;
+}
+.active {
+	opacity: 1;
+}
+#slide-wrapper {
+	display: flex;
+	min-height: 70px;
+	align-items: center;
+}
+#slider {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+#slider::-webkit-scrollbar {
+  display: none;
+}
+/* #slider::-webkit-scrollbar {
+	width: 8px;
+}
+#slider::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+#slider::-webkit-scrollbar-thumb {
+  background-color: #dede2e;
+  outline: 1px solid slategrey;
+   border-radius: 100px;
+}
+#slider::-webkit-scrollbar-thumb:hover{
+  background-color: #18b5ce;
+} */
+.arrow{
+	width: 1rem;
+	height: 1rem;
+	cursor: pointer;
+	transition: .3s;
+  opacity: 0.5;
+}
+.arrow:hover{
+	opacity: 0.8;
+}

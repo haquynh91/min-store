@@ -6,7 +6,7 @@
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.4;
-
+    margin-bottom: 1rem;
 }
 .form-sign-in {
     border:solid 1px #ADB5BD;
@@ -32,6 +32,16 @@ width: 100%;
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+}
+.no-acc {
+    font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+color: #343A40;
+}
+.register {
+    color: #C9184A;
+    padding-left: 1rem;
 }
 @media (min-width : 768px) {
     .form-login {

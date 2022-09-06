@@ -72,17 +72,23 @@
               </div>
               <div
                 class="d-flex j-between a-center icon"
-                style="width: 3.5rem; padding-left: 2rem"
+                style="width: 3.5rem; margin-left: 2rem"
               >
                 <a class="icon-user" href="login.html"
                   ><i class="fa-regular fa-circle-user"></i
                 ></a>
-                <a class="icon-cart" href="cart.html"
+                <a class="icon-cart relative" href="cart.html"
                   ><i
                     class="fa-solid fa-cart-shopping"
                     style="margin-left: 0.5rem"
-                  ></i
-                ></a>
+                  ></i>
+                  <span
+                    class="position-absolute top-0 starts-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    4
+                    <span class="visually-hidden">qty</span>
+                  </span></a
+                >
               </div>
             </div>
           </div>
@@ -107,11 +113,11 @@
       <!-- FiLter-SortBy -->
       <div>
         <div class="row align-items-end" id="filter">
-          <div class="col-12 col-sm-3 filter-left d-flex j-between" style="padding-right: 5%; margin-bottom: 8px;">
+          <div class="col-12 col-sm-4 filter-left d-flex j-between" style="padding-right: 5%; margin-bottom: 8px;">
             <span class="filter">Filter by</span>
             <span class="reset" id="reset" onclick>Reset all</span>
           </div>
-          <div class="col-12 col-sm-9 d-flex j-between align-items-end" style="margin-bottom: 8px;">
+          <div class="col-12 col-sm-8 d-flex j-between align-items-end" style="margin-bottom: 8px;">
           <div>
             <div class="btn btn-outline-primary filter filter-mobile" style="height:100%">Filter</div>
           <div class="filter-result" id="results"></div> <!-- Showing 1-12 of 28 results -->
@@ -133,7 +139,7 @@
       </div>
       
       <div class="row">
-        <div class="filter-by-desktop col-3 d-flex j-between" id = "filter-detail" style="padding-right: 5%;">
+        <div class="filter-by-desktop col-12 col-sm-4 d-flex j-between" id = "filter-detail" style="padding-right: 5%;">
           <div class="accordion" style="width: 100%" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -575,8 +581,8 @@
             </div>
           </div>
         </div>
-        <div class="col-9">
-          <div class="d-flex j-center f-wrap" id="render">
+        <div class="col-12 col-sm-8">
+          <div class="row" id="render">
             </div>
           <!-- pagination -->
           <div class="row">

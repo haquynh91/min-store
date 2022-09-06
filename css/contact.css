@@ -28,3 +28,8 @@
 .email-input .form-label {
     margin-bottom: 0.2rem;
 }
+.email-form>form {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+}

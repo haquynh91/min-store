@@ -84,17 +84,23 @@
               </div>
               <div
                 class="d-flex j-between a-center icon"
-                style="width: 3.5rem; padding-left: 2rem"
+                style="width: 3.5rem; margin-left: 2rem"
               >
                 <a class="icon-user" href="login.html"
                   ><i class="fa-regular fa-circle-user"></i
                 ></a>
-                <a class="icon-cart" href="cart.html"
+                <a class="icon-cart relative" href="cart.html"
                   ><i
                     class="fa-solid fa-cart-shopping"
                     style="margin-left: 0.5rem"
-                  ></i
-                ></a>
+                  ></i>
+                  <span
+                    class="position-absolute top-0 starts-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    4
+                    <span class="visually-hidden">qty</span>
+                  </span></a
+                >
               </div>
             </div>
           </div>
@@ -123,27 +129,21 @@
   <div class="row d-flex">
     <div class="col-12 col-md-7 product-left">
       <div class="product-img">
-        <a href=""><img src="img/optimus.png" alt="" /></a>
+        <img id=featured src="img/optimus 3.png">
       </div>
-      <div class="row product-thumbnails d-flex">
-        <div class="product-slider">
-          <div class="product-thumb">
-            <a href=""><img src="img/optimus.png" alt="" /></a>
+        <div id="slide-wrapper" >
+          <img id="slideLeft" class="arrow" src="img/arrow-left.png">
+          <div id="slider">
+            <img class="thumbnail active" src="img/optimus 3.png">
+            <img class="thumbnail" src="img/optimus 5.png">
+            <img class="thumbnail" src="img/optimus 7.png">
+            <img class="thumbnail" src="img/optimus 2.png">
+            <img class="thumbnail" src="img/optimus 1.png">
+            <img class="thumbnail" src="img/optimus 6.png">
+            <img class="thumbnail" src="img/optimus 9.png">
           </div>
-          <div class="product-thumb">
-            <a href=""><img src="img/optimus.png" alt="" /></a>
-          </div>
-          <div class="product-thumb">
-            <a href=""><img src="img/optimus.png" alt="" /></a>
-          </div>
-          <div class="product-thumb">
-            <a href=""><img src="img/optimus.png" alt="" /></a>
-          </div>
-          <div class="product-thumb">
-            <a href=""><img src="img/optimus.png" alt="" /></a>
-          </div> 
+          <img id="slideRight" class="arrow" src="img/arrow-right.png">
         </div>
-      </div>
     </div>
     <div class="col-12 col-md-5 product-right">
       <div class="product-name">Optimus Prime</div>
@@ -175,21 +175,15 @@
     </li>
   </ul>
   <div class="tabs-content active" id="tab1">
-    <p> Optimus Prime. Leader of the heroic Autobots. And now an impressive 2-in-1 LEGO® build for Transformers fans. Awaken your passion for the Transformers universe with this rewarding building project for adults as you craft all the details of an iconic robot.
-
-      Hiding in plain sight
-      Just like the beloved original, this Optimus Prime model converts from a robot to a truck and back again. Admire the 19 points of articulation in robot mode and open the chest chamber to store the Autobot Matrix of Leadership. Attach the jetpack in robot mode and place the ion blaster and Energon axe in the Autobot’s hands. Other authentic accessories include an Energon cube and optional waist panel. Add the plaque to display your passion for Transformers with pride.
-                </p>
+    <p> Optimus Prime. Leader of the heroic Autobots. And now an impressive 2-in-1 LEGO build for Transformers fans. Awaken your passion for the Transformers universe with this rewarding building project as you craft all the details of an iconic robot. Hiding in plain sight Just like the beloved original, this Optimus Prime model converts from a robot to a truck and back again. Admire the 19 points of articulation in robot mode and open the chest chamber to store the Autobot Matrix of Leadership. Attach the jetpack in robot mode and place the ion blaster and Energon axe in the Autobot’s hands. Other authentic accessories include an Energon cube and optional waist panel. Add the plaque to display your passion for Transformers with pride.
+    </p>
   </div>
   <div class="tabs-content" id="tab2">
-    <p> Spend quality time with premium LEGO buildable model sets for adults. This set makes an immersive project for you or a top gift idea for anyone who loves Transformers collectibles.
+    <p> This set makes an immersive project for you or a top gift idea for anyone who loves Transformers collectibles.
       Build a Transformers icon – Enjoy quality time crafting all the details of this LEGO® Optimus Prime (10302) model
 Converts from robot to vehicle – Just like the much-loved original, this LEGO® Optimus Prime replica switches between a robot and a truck
 Authentic accessories – Relive Transformers sagas with accessories that include the ion blaster, Autobot Matrix of Leadership, an Energon axe, Energon cube and jetpack
-For Transformers fans – This LEGO® Optimus Prime collectible model is designed especially for adults looking for their next immersive project
-Display with pride – Includes a display plaque so you can pay tribute to your passion for Transformers
-19 points of articulation – Explore all of Optimus Prime’s movements. Open the chest chamber to store the Autobot Matrix of Leadership
-Dimensions – In truck mode, the model measures over 5.5 in. (15 cm) high, 10.5 in. (27 cm) long and 4.5 in. (12 cm) wide. In robot mode, the model stands over 13.5 in. (35 cm) tall
+For Transformers fans – In truck mode, the model measures over 5.5 in. (15 cm) high, 10.5 in. (27 cm) long and 4.5 in. (12 cm) wide. In robot mode, the model stands over 13.5 in. (35 cm) tall
     </p>
   </div>
 </div>
@@ -361,6 +355,7 @@ Dimensions – In truck mode, the model measures over 5.5 in. (15 cm) high, 10.5
         </div>
       </div>
     </section>
+
 
     <!-- Bootstrap JavaScript Libraries -->
     <script

@@ -210,7 +210,8 @@ function renderProduct() {
     const finalPrice =
       product.originalPrice * (1 - product.salePercentage / 100);
     displayedHtmlElemt.push(`
-      <div class="col-12 col-sm-6 col-md-4 product-item relative">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+      <div class="product-item relative">
           <div class="product-img">
               <a href=""><img src="${product.productImg}" alt="" /></a>
           </div>
@@ -219,6 +220,7 @@ function renderProduct() {
           <span class="original-price">$${product.originalPrice}</span>
           <span class="discount-price">$${finalPrice.toFixed(2)}</span>
           <button class="btn btn-outline-primary btn-in-card">Add to Cart</button>
+      </div>
       </div>`);
     
     console.log(displayedProds);

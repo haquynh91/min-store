@@ -86,17 +86,23 @@
               </div>
               <div
                 class="d-flex j-between a-center icon"
-                style="width: 3.5rem; padding-left: 2rem"
+                style="width: 3.5rem; margin-left: 2rem"
               >
                 <a class="icon-user" href="login.html"
                   ><i class="fa-regular fa-circle-user"></i
                 ></a>
-                <a class="icon-cart" href="cart.html"
+                <a class="icon-cart relative" href="cart.html"
                   ><i
                     class="fa-solid fa-cart-shopping"
                     style="margin-left: 0.5rem"
-                  ></i
-                ></a>
+                  ></i>
+                  <span
+                    class="position-absolute top-0 starts-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    4
+                    <span class="visually-hidden">qty</span>
+                  </span></a
+                >
               </div>
             </div>
           </div>
@@ -111,14 +117,14 @@
     </section>
 
     <section class="login ms-container relative">
-      <div class="block1 col-12 col-sm-6">
+      <div class="block1 col-12 col-md-6">
         <div class="login-heading">Log In To MinStore</div>
-        <div>New to Minstore?</div>
+        <!-- <div>New to Minstore?</div>
         <div>Create Account</div>
         <div>OR</div>
         <div class="return">Return to Store</div>
-      </div>
-      <div class="block2 form-login col-12 col-sm-5">
+      </div> -->
+      <div class="block2 form-login col-12 col-md-5">
         <form>
           <input
             type="text"
@@ -143,8 +149,10 @@
         <div class="btn-underline d-flex j-center">
           <a href="#">Forgot your password?</a>
         </div>
-        <div class="or">OR</div>
-        <div class="btn btn-outline-primary btn-in-checkout mt-1 mb-1">
+        <span class="no-acc">Don't have an account?</span>
+        <span class="no-acc register">Register</span>
+
+        <!-- <div class="btn btn-outline-primary btn-in-checkout mt-1 mb-1">
           Sign in with Google
           <a href="#"></a>
         </div>
@@ -164,9 +172,9 @@
           <label class="form-check-label" for="flexCheckDefault">
             Check here to indicate that you have agree to the terms & conditions
           </label>
-        </div>
+        </div> -->
       </div>
-      <div class="block3 background-img col-12 col-sm-6">
+      <div class="block3 background-img col-12">
         <img src="img/background2.webp" alt="" />
       </div>
     </section>
