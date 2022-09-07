@@ -556,7 +556,7 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           arrows: false,
           infinite: false,
         },
