@@ -127,9 +127,10 @@ border: solid 1px #495057;
 .accordion-button:not(.collapsed)::after{
   background-image: url(/img/down.svg);
 }
-
-
 .product-item {
   margin-bottom: 1.5rem;
- 
+}
+.page-link {
+  color: #6C757D;
+  border:none;
 }

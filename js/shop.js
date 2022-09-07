@@ -185,18 +185,6 @@ const totalPerPage = 12;
 var totalPage = 1;
 
 function renderProduct() {
-  /**
-   * 1. get list product = filterProducts();
-   *
-   * 2. draw
-   *
-   * 2.1 draw content
-   *
-   * 2.2 draw page result
-   *
-   * 2.3 draw pagination
-   *
-   */
   const displayedProds = getDisplayedProducts();
   const firstElementOfPage = getFirstElementOfPage();
 
@@ -213,7 +201,7 @@ function renderProduct() {
     <div class="col-12 col-sm-6 col-md-6 col-lg-4">
       <div class="product-item relative">
           <div class="product-img">
-              <a href=""><img src="${product.productImg}" alt="" /></a>
+              <a href="single-page.html"><img src="${product.productImg}" alt="" /></a>
           </div>
           <div class="sale-off absolute">${product.salePercentage}%</div>
           <div class="product-name">${product.productName}</div>
@@ -241,7 +229,7 @@ function renderProduct() {
   for (let i = 1; i <= totalPage; i++) {
     displayedPageElem.push(`
     <li class="page-item">
-      <a class="page-link" href="#" onclick="selectPage(${i})">${i}</a>
+      <a class="page-link" href="#" id="page-${i}"onclick="selectPage(${i})">${i}</a>
     </li>`);
   }
   document.getElementById("page-number").innerHTML = "";
@@ -255,6 +243,8 @@ function prevPage() {
     return;
   }
   renderProduct();
+  document.getElementById(`page-${currentPage}`).style.color = "#A4133C";
+  document.getElementById(`page-${currentPage}`).style.textDecoration = "underline";
 }
 
 function nextPage() {
@@ -264,11 +254,15 @@ function nextPage() {
     return;
   }
   renderProduct();
+  document.getElementById(`page-${currentPage}`).style.color = "#A4133C";
+  document.getElementById(`page-${currentPage}`).style.textDecoration = "underline";
 }
 
 function selectPage(p) {
   currentPage = p;
   renderProduct();
+  document.getElementById(`page-${p}`).style.color = "#A4133C";
+  document.getElementById(`page-${p}`).style.textDecoration = "underline";
 }
 
 function getFirstElementOfPage() {
@@ -708,6 +702,11 @@ $(function () {
   });
 });
 
+// $(function () {
+//   $(".page-item").click(function () {
+//     $(this).css("color", "#A4133C;");
+//   });
+// });
 
 $(function () {
   $(".filter-mobile").click(function () {
