@@ -279,7 +279,7 @@ color: #6C757D;
 
 /* slick slider*/
 .slick-initialized .slick-slide {
-  margin: 0 0.8rem;
+  margin: 0 0.75rem;
 }
 .slick-arrow {
   position: absolute;
