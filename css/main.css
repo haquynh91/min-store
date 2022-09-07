@@ -252,6 +252,10 @@ color: #6C757D;
   font-size: 14px;
   line-height: 22px;
   color: #343a40;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
 }
 .original-price {
   font-weight: 500;
