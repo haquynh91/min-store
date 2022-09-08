@@ -117,64 +117,56 @@
     </section>
 
     <section class="ms-container">
-      <div class="back-to-cart">< Back to My Cart</div>
+      <div class="back-to-cart">&#8249; Back to My Cart</div>
       <div class="check-out-detail d-flex j-between">
         <div class="col-md-7 col-lg-8 check-out-detail-left">
           <div class="shipping-add checkout-bg">
             <div class="check-out-detail-heading">Shipping Address</div>
-            <form class="row g-6">
+            <form class="row g-6 ">
               <div class="col-md-6 input-styles">
-                <label for="inputFirstName4" class="form-label"
-                  >First Name</label
-                >
-                <input type="text" class="form-control" id="firstName" />
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" />
               </div>
               <div class="col-md-6 input-styles">
-                <label for="inputLastName4" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="inputLastName4" />
+                <input type="text" class="form-control" id="inputLastName4" placeholder="Last Name"/>
               </div>
               <div class="col-12 input-styles">
-                <label for="inputAddress" class="form-label">Address</label>
                 <input
                   type="text"
                   class="form-control"
                   id="inputAddress"
-                  placeholder="1234 Main St"
+                  placeholder="Address Line 1"
                 />
               </div>
               <div class="col-12 input-styles">
-                <label for="inputAddress2" class="form-label">Address 2</label>
                 <input
                   type="text"
                   class="form-control"
                   id="inputAddress2"
-                  placeholder="Apartment, studio, or floor"
+                  placeholder="Address Line 2 (optional)"
                 />
               </div>
               <div class="col-4 col-md-3 input-styles">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip" />
+                <input type="text" class="form-control" id="inputZip" placeholder="ZIP Code"/>
               </div>
               <div class="col-8 col-md-5 input-styles">
-                <label for="inputState" class="form-label">State</label>
                 <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
+                  <option selected>State</option>
+                  <option>New York</option>
+                  <option>Hawaii</option>
+                  <option>Chicago</option>
+                  <option>Florida</option>
+                  <option>California</option>
+                  <option>Georgia</option>
                 </select>
               </div>
               <div class="col-md-4 input-styles">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity" />
+                <input type="text" class="form-control" id="inputCity" placeholder="City"/>
               </div>
               <div class="col-6 input-styles">
-                <label for="inputPhoneNumber4" class="form-label"
-                  >Phone Number</label
-                >
-                <input type="number" class="form-control" id="phoneNumber" />
+                <input type="number" class="form-control" id="phoneNumber" placeholder="Phone Number" />
               </div>
               <div class="col-6 input-styles">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" />
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
               </div>
             </form>
           </div>
@@ -189,45 +181,35 @@
               <div class="tabs-content active" id="tab1">
                 <form class="row g-6">
                   <div class="col-md-7 col-lg-8 input-styles">
-                    <label for="inputFirstName4" class="form-label"
-                      >Card Number</label
-                    >
                     <input
-                      type="text"
+                      type="number"
                       class="form-control"
                       id="firstName"
-                      placeholder="1234 XXX 5678"
+                      placeholder="Card Number"
                     />
                   </div>
                   <div class="col-md-5 col-lg-4 input-styles">
-                    <label for="inputLastName4" class="form-label"
-                      >Expiration Date</label
-                    >
                     <input
                       type="text"
                       class="form-control"
                       id="inputLastName4"
-                      placeholder="mm/dd/yy"
+                      placeholder="Expiration Date"
                     />
                   </div>
                   <div class="col-md-9 col-lg-10 input-styles">
-                    <label for="inputAddress" class="form-label"
-                      >Cardholder's Name</label
-                    >
                     <input
                       type="text"
                       class="form-control"
                       id="inputAddress"
-                      placeholder="Van A Nguyen"
+                      placeholder="Cardholder's Name"
                     />
                   </div>
                   <div class="col-md-3 col-lg-2 input-styles">
-                    <label for="inputAddress2" class="form-label">CVV</label>
                     <input
                       type="text"
                       class="form-control"
                       id="inputAddress2"
-                      placeholder="123"
+                      placeholder="CVV"
                     />
                   </div>
                 </form>
@@ -245,7 +227,7 @@
             </div>
           </div>
           <div class="d-flex j-center">
-            <button class="col-4 btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button class="col-4 btn btn-primary btn-place-order" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Place Order
               <a href="#"></a>
             </button>
@@ -256,13 +238,14 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Thank you for your order!</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Thank you for shopping with us!</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Your order ID is ABC123456!@#.
+        <span>Your order ID is </span>
+        <span style="color:#C9184A;">#114-3806700-3424255</span>
         <br>
-        A delivery receipt has been sent to your email.
+        An order comfirmation has been sent to your email.
 
       </div>
       <div class="modal-footer">

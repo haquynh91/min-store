@@ -15,7 +15,7 @@ padding-bottom: 0.5rem;
 font-size: 16px;
 line-height: 24px;
 color: #343A40;
-
+margin-bottom: 0.75rem;
 }
 .input-styles{
   margin-top: 0.5rem;
@@ -39,6 +39,7 @@ line-height: 24px;
     border-radius: 8px;
     margin-bottom: 1.5rem;
   }
+
 .tabs-title {
 font-weight: 500;
 font-size: 14px;
@@ -46,15 +47,18 @@ line-height: 22px;
 color: #343A40;
 padding: 0.5rem 0.75rem;
 }
+.tabs-title-1 {
+  background-color: #E9ECEF;
+}
 .tabs-content {
   font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 color: #ADB5BD;
+padding-top: 0.5rem;
 }
 .tabs-content>p {
   color: #495057;
-  margin-top: 0.5rem;
   margin-bottom: 0.25rem;
 }
 
@@ -75,6 +79,12 @@ color: #ADB5BD;
 .right {
   width: 100%;
   margin-left: 0.5rem;
+}
+#cart-discount, #cart-shipping-fee, #cart-order-total {
+  color: #A4133C;
+}
+#cart-order-total {
+  font-weight: 700;
 }
 .final-price {
   font-size: 14px;
